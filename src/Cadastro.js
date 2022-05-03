@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import "./global.css"
 
-function cadastro() {
+function Cadastro() {
 
   const[cadUser, setCadUser] = useState([]);
 
@@ -50,4 +49,4 @@ function cadastro() {
     )
   }
 
-export default App;
+export default Cadastro;
