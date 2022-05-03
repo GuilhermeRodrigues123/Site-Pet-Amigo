@@ -7,7 +7,7 @@
 
 html,
 body{
-    min-height: 50vh;
+    min-height: 100vh;
     background: rgba(250, 244, 211, 1);
 }
 

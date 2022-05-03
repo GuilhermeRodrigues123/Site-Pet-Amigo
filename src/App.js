@@ -1,12 +1,14 @@
 import React from 'react';
+//import React, { useState } from 'react';
 import "./global.css";
-import "./Cabecalho/Cabecalho.css"
-import Cabecalho from "./Cabecalho"
+import "./HeaderFooter/HeaderFooter.css"
+import HeaderFooter from "./HeaderFooter"
+
 
 function App() {
   return(
     <>
-      <Cabecalho/>;
+      <HeaderFooter/>;
     </>
 
   );
