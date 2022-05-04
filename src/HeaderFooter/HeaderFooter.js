@@ -1,6 +1,10 @@
 import React from 'react';
 //import React, { useState } from 'react';
 import './HeaderFooter'
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import{Form} from "react-bootstrap";
+import{FormControl} from "react-bootstrap";
 
 
 
@@ -21,9 +25,15 @@ function HeaderFooter(){
                 <h1>Quero Adotar </h1>             
                 <h1>Sobre nós</h1>
                 <h1>Login</h1>
-                <h1><div className='BarraPesquisa' > 
-                    <input type="text" id="pesquisa" size="40" placeholder="Pesquisar Pet..."/></div>
-                </h1>
+        <Form className="d-flex">
+            <FormControl
+          type="search"
+          placeholder="Pesquisa"
+          className="me-2"
+          aria-label="Pesquisa"
+        />
+        <Button variant="outline-primary">Buscar</Button>
+      </Form>
             </div>
             <img className ="meuPerfil" src = "./images/conta.png" alt ="conta"></img>
         </div>            
