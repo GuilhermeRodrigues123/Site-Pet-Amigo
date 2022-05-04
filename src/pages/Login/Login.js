@@ -4,7 +4,7 @@ import{Form} from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import "./global.css"
+import "../../global.css"
 import "./login.css"
 
 function Login(){
