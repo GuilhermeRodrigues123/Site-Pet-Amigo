@@ -18,25 +18,18 @@ function HeaderFooter(){
     </head>
     <body>
         <header>
-        <div className = "header">
             <img className ="logo" src = "./images/logo.png" alt ="Logo"></img>
             <div className = "header_titles">
                 <h1>Inicio</h1>                
                 <h1>Quero Adotar </h1>             
                 <h1>Sobre nós</h1>
                 <h1>Login</h1>
-        <Form className="d-flex">
-            <FormControl
-          type="search"
-          placeholder="Pesquisa"
-          className="me-2"
-          aria-label="Pesquisa"
-        />
-        <Button variant="outline-primary">Buscar</Button>
-      </Form>
             </div>
-            <img className ="meuPerfil" src = "./images/conta.png" alt ="conta"></img>
-        </div>            
+            <Form className="d-flex">
+                <FormControl type="search" placeholder="Pesquisa" className="me-2" aria-label="Pesquisa"/>
+                <Button variant="outline-primary">Buscar</Button>
+            </Form>
+            <img className ="perfil" src = "./images/conta.png" alt ="conta"></img>         
         </header>
         
         <footer>
@@ -64,8 +57,8 @@ function HeaderFooter(){
                 </div> 
             </div>
         </footer>
-        </body>
-        </>
+    </body>
+    </>
     );
 }
 export default HeaderFooter;
