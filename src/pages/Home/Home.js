@@ -24,10 +24,10 @@ function Home(){
                     src="/images/Carrossel2.png"/>
                 </Carousel.Item>
 
-            <Carousel.Item>
-                <img
-                className="carrosselImg"
-                src="/images/carrossel3.png"/>
+                <Carousel.Item>
+                    <img
+                    className="carrosselImg"
+                    src="/images/carrossel3.png"/>
                 <Carousel.Caption>
                 </Carousel.Caption>
             </Carousel.Item>

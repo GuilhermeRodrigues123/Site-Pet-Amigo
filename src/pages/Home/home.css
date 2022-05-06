@@ -20,14 +20,13 @@
 }
 
 .paginaCarrossel{
-
-    margin-left: 10%;
-    width: 75%;
-    height: 20%;
+    margin-left: 10vw;
+    width: 80vw;
+    height: 50vh;
 }
 
 .carrosselImg{
-    height: 10%;
-    margin-left: 5%;
-
+    object-fit:contain;
+    height: 50vh;
+    width: 80vw;
 }
