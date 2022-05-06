@@ -1,5 +1,6 @@
 import React,{ useState } from 'react';
 import {useNavigate} from 'react-router-dom';
+import "./cadastro.css"
 
 function Cadastro(){
     const history = useNavigate();
@@ -16,30 +17,36 @@ function Cadastro(){
     }
 
     return (
-        <div>
-          <h1>Cadastro</h1>
-          <input type="text" placeholder ="Nome" name ="nome"
-                onChange={UpdateUser}/>
-          {/* Setando a característica Nome do objeto*/}
-            <p><input type="text" placeholder ="CPF" name = "cpf" 
-                onChange={UpdateUser}/></p>
-            <p><input type="text" placeholder ="Senha" name = "senha" 
-                onChange={UpdateUser}/></p>
-            <p><input type="text" placeholder ="Confirme sua senha" name = "confsenha" 
-                onChange={UpdateUser}/></p>
-            <p><input type="text" placeholder ="Email" name = "email" 
-                onChange={UpdateUser}/></p>
-            <p><input type="text" placeholder ="Telefone" name = "telefone" 
-                onChange={UpdateUser}/></p>
-            <p><input type="text" placeholder ="Endereço" name = "endereco" 
-                onChange={UpdateUser}/></p>
+        <div className = "fundo1">
+            <div className = "base">
+                <div className = "cadtext">
+                    <h1>Cadastro</h1>
+                </div>
+                <div className="texto">Para criar sua conta, por favor preencha os dados abaixo: </div>
           
-            <button
-            onClick={()=>{alert("Cadastro realizado com sucesso!")}}>Confirmar</button>
-            <div>
-            <button onClick={() => {history(-1);}}>
-                retornar
-            </button>
+                <input type="text" placeholder ="Nome" name ="nome"
+                        onChange={UpdateUser}/>
+                {/* Setando a característica Nome do objeto*/}
+                <input type="text" placeholder ="CPF" name = "cpf" 
+                    onChange={UpdateUser}/>
+                <input type="text" placeholder ="Senha" name = "senha" 
+                    onChange={UpdateUser}/>
+                <input type="text" placeholder ="Confirme sua senha" name = "confsenha" 
+                    onChange={UpdateUser}/>
+                <input type="text" placeholder ="Email" name = "email" 
+                    onChange={UpdateUser}/>
+                <input type="text" placeholder ="Telefone" name = "telefone" 
+                    onChange={UpdateUser}/>
+                <input type="text" placeholder ="Endereço" name = "endereco" 
+                    onChange={UpdateUser}/>
+                <div className = "buttonContent"><button className="cadbutton"
+                onClick={()=>{alert("Cadastro realizado com sucesso!")}}>CADASTRAR</button></div>
+                
+                <div>
+                    <button onClick={() => {history(-1);}}>
+                        retornar
+                    </button>
+                </div>
             </div>
         </div>
         )
