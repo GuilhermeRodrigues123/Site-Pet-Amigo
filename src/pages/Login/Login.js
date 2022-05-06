@@ -26,19 +26,19 @@ function Login(){
 
       <div className = "mom">
 
-      <div className="fundoRoxo"> 
+      <div className="cadastro"> 
         <img className="imagem" src = "/images/img1.png"></img>
         <div className="textoCad"> 
-            <h2>Bem vindo!</h2>
-            <h6>Para acessar a sua conta, faça login ao lado.</h6>
+            <h1>Bem vindo!</h1>
+            <p1>Para acessar a sua conta, faça login ao lado.</p1>
             <p></p>
-            <h7>Não tem uma conta? Clique aqui e cadastre-se!</h7>
-            <div className = "buttonContent"><button className = "cadastroButton"> Cadastre-se</button></div>
+            <p2>Não tem uma conta? Clique aqui e cadastre-se!</p2>
         </div>
+        <div className = "buttonContent"><button className = "cadastroButton"> Cadastre-se</button></div>
       </div>
 
-      <div className = "fundoLaranja">
-        <h5> Entrar</h5>
+      <div className = "login">
+        <h1> Entrar</h1>
         <Form>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email </Form.Label>
@@ -58,7 +58,7 @@ function Login(){
             <Form.Check type="checkbox" label="Mantenha-me conectado." />
           </Form.Group>
 
-        <Button variant="primary" type="submit" /*onClick={(logar)}*/>
+        <Button className = "loginButton" variant="primary" type="submit" /*onClick={(logar)}*/>
           Entrar
         </Button>
         </Form>
