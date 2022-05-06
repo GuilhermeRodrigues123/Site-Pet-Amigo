@@ -29,30 +29,30 @@ function HeaderFooter(){
                 <FormControl type="search" placeholder="Pesquisa" className="me-2" aria-label="Pesquisa"/>
                 <Button variant="outline-primary">Buscar</Button>
             </Form>
-            <img className ="perfil" src = "./images/conta.png" alt ="conta"></img>         
+            <img className ="perfil" src = "./images/conta.svg" alt ="conta"></img>         
         </header>
         
         <footer>
             <div className = "footer_left">
-                <img className ="logo_alt" src = "./images/logo_alt.png" alt ="Logo"></img>
+                <img className ="logo" src = "./images/logo_alt.svg" alt ="Logo"></img>
                 <h1>Pet amigo é uma plataforma criada para proporcionar um lar à animais abandonados. 
                     Iremos juntos promover a cultura de adoção, para os pets que tanto amamos.</h1>            
             </div>
             <div className='footer_right'>
                 <div className ='footer_contato'>   
-                    <img src = "./images/insta.png" alt ="insta"></img>
+                    <img src = "./images/insta.svg" alt ="insta"></img>
                     <h1> @PETAMIGO</h1>
                 </div>
                 <div className ='footer_contato'>   
-                    <img src = "./images/zap.png" alt ="insta"></img>
+                    <img src = "./images/zap.svg" alt ="insta"></img>
                     <h1> (31) 99333-3333</h1>
                 </div>
                 <div className ='footer_contato'>   
-                    <img src = "./images/telefone.png" alt ="insta"></img>
+                    <img src = "./images/telefone.svg" alt ="insta"></img>
                     <h1> (31) 3333-3333</h1>
                 </div>
                 <div className ='footer_contato'>   
-                    <img src = "./images/email.png" alt ="insta"></img>
+                    <img src = "./images/email.svg" alt ="insta"></img>
                     <h1> PETAMIGO@CPEJR.COM.BR</h1>
                 </div> 
             </div>
