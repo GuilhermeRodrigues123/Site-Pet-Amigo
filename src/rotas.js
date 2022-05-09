@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import PreLoad from './pages/PreLoad';
 import MeuPerfil from './pages/MeuPerfil';
 import AnimaisParaAdocao from './pages/AnimaisParaAdocao';
+import RecuperarSenha from './pages/RecuperarSenha';
 
 
 function Rotas(){
@@ -18,6 +19,7 @@ function Rotas(){
                 <Route path='/home' element={<Home/>}/>
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/cadastro' element={<Cadastro/>}/>
+                <Route path='/recuperar-senha' element={<RecuperarSenha/>}/>
             </Routes>
         </BrowserRouter>
     );

@@ -31,6 +31,11 @@ function PreLoad(){
                 Meu perfil
             </button>
             </div>
+            <div>
+            <button onClick={() => {history("recuperar-senha");}}>
+                Recuperar Senha
+            </button>
+            </div>
         </div>
     );
 }
