@@ -2,7 +2,8 @@
 header{
     position: fixed;
     width: 100%;
-    height: 20vh;
+    height: 200px;
+    max-height: 20vh;
     padding-left: 10vw;
     padding-right: 10vw;
     padding-top: 5vh;
@@ -19,8 +20,9 @@ header{
 .header_titles{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-between;
+    width: 50%;
+    column-gap: 80px;
 }
 
 .header_titles h1{
@@ -28,6 +30,8 @@ header{
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+    text-align: center;
+    border-style: dotted;
     
     color: #000000;
 }
@@ -37,7 +41,6 @@ footer{
     top: 50vh;
     width: 100%;
     height: 50vh;
-    top: 70%;
     padding-left: 10vw;
     padding-right: 20vw;
     padding-top: 10vh;
@@ -49,24 +52,22 @@ footer{
     background: #0D3B66;
 }
 
-
-
 .footer_left h1{
     max-width: 25vw;
     height: 10%;
     font-family: 'Dosis';
     font-style: normal;
     font-weight: 400;
-    font-size: 23.2553px;
+    font-size: 18px;
     line-height: 30px;
     text-align: justify;
+    margin-top: 30px;
 }
 
 .footer_right{
     max-width: max-content;
     max-height: max-content;
     position: relative;
-   
 }
 
 .footer_right h1{
@@ -85,5 +86,32 @@ footer{
 
 .logo{
     object-fit: fill;
+    width: 150px;
 }
 
+
+
+@media (max-width: 1080px){
+    .footer_right h1{
+        font-size: 20px;
+    }
+    .footer_left h1{
+        font-size: 12px;
+    }
+    .header_titles h1{
+        font-size: 10px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .footer_contato img{
+        width: 30px;
+    }
+    .perfil{
+        width: 20px;
+    }
+}
+
+@media (max-width: 1025px){
+
+}
