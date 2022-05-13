@@ -20,6 +20,7 @@
 }
 
 .paginaCarrossel{
+
     margin-left: 10vw;
     width: 80vw;
     height: 50vh;
@@ -27,6 +28,79 @@
 
 .carrosselImg{
     object-fit:contain;
-    height: 50vh;
+    height: 52vh;
     width: 80vw;
+    cursor: pointer; 
+
+}
+
+.textHome{
+
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin-left: 8%;
+    margin-top: 10vh;
+    color: #000000;
+}
+
+.titHome{
+    color: #0D3B66;
+    font-family: Bebas Neue, semi-bold;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.homeMom{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 15%;
+    
+}
+
+.textHome2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: 6%;
+    color: #000000;
+}
+
+.img2{
+    margin-left: 20%;
+}
+
+.homeButton{
+
+    justify-content: center;
+    width: 8vw;
+    height: 6vh;
+    background-color: #FFB100;
+    font-family: 'Poppins', Bold;
+    font-size: 17px;
+    border-radius: 8px;
+    color: #0D3B66;
+    margin-top: 12px;
+    margin-left: 100px;
+    border: 0px;
+}
+
+.cardMom{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.cardHome{
+
+    padding: 30px;
+    width: 30vh;
+    height: 30vh;
+    background-color: #FFC759;
+    border-radius: 18px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid #6E2594;
+    margin-left: 3%;
+
 }
