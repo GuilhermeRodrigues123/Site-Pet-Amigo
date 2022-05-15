@@ -7,7 +7,9 @@
     font-size: 15px;
     border: 4px solid #6E2594;
     border-radius: 10px;
+    width: 21rem;
 }
+
 
 .showMoreB{
     font-family: 'Poppins' semi-bold;
@@ -20,4 +22,8 @@
 
 .fundoGroupCard{
     background-color: #FAF4D3;
+}
+
+.cardGrupo{
+    flex-wrap: wrap;
 }

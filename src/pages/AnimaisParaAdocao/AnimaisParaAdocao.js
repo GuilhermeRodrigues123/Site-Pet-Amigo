@@ -105,36 +105,34 @@ function AnimaisParaAdocao() {
     const history = useNavigate();
     const [open, setOpen] = useState(false);
 
-
     return (
         <div>
+            
             <h1>Animais para adocao</h1>
             <button onClick={() => { history(-1); }}>
                 retornar
             </button>
             <div className = "cardGrupo">
-            <Container>
-            <Row xs={1} md={3} className="g-4">
-                {Array.from({ length: 6 }).map((_, idx) => (
-                    <Col>
-                    
-                        <Card className = "cardStyle"
-                            bg= 'warning'
-                            text='dark'
-                            style={{width: '21rem'}}>
-                            <Card.Img variant="top"  src={vetorPets[idx].imagem}/>
-                            <Card.Body>
-                                <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
-                                <Card.Text>{vetorPets[idx].idade}</Card.Text>
-                                <Card.Text>{vetorPets[idx].porte}</Card.Text>
-                                <Button variant="primary">Favoritar</Button>{' '}
-                            </Card.Body>
-                        </Card>
-                        
-                    </Col>
-                ))}
-            </Row>
-            </Container>
+                <Container>
+                <Row xs={1} md={3} className="g-4">
+                    {Array.from({ length: 6 }).map((_, idx) => (
+                        <Col>
+                            <Card className = "cardStyle"
+                                bg= 'warning'
+                                text='dark'>
+                                <Card.Img variant="top"  src={vetorPets[idx].imagem}/>
+                                <Card.Body>
+                                    <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
+                                    <Card.Text>{vetorPets[idx].idade}</Card.Text>
+                                    <Card.Text>{vetorPets[idx].porte}</Card.Text>
+                                    <Button variant="primary">Favoritar</Button>{' '}
+                                </Card.Body>
+                            </Card>
+                            
+                        </Col>
+                    ))}
+                </Row>
+                </Container>
             </div>
         <div className = "showMoreB">
         <Button variant = "warning"
@@ -156,8 +154,7 @@ function AnimaisParaAdocao() {
                     
                         <Card className = "cardStyle"
                             bg= 'warning'
-                            text='dark'
-                            style={{width: '21rem'}}>
+                            text='dark'>
                             <Card.Img variant="top"  src={vetorPets2[idx].imagem}/>
                             <Card.Body>
                                 <Card.Text>{vetorPets2[idx].nome};  {vetorPets2[idx].especie}</Card.Text>
