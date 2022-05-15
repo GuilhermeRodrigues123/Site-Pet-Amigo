@@ -26,8 +26,8 @@ function HeaderFooter(){
                 <h1>Login</h1>
             </div>
             <Form className="d-flex">
-                <FormControl type="search" placeholder="Pesquisa" className="me-2" aria-label="Pesquisa"/>
-                <Button variant="outline-primary">Buscar</Button>
+                <FormControl className="pesquisa" type="search" placeholder="Pesquisa" aria-label="Pesquisa"/>
+                <Button className="butaoPesquisa"variant="outline-primary">Buscar</Button>
             </Form>
             <img className ="perfil" src = "./images/conta.svg" alt ="conta"></img>         
         </header>
