@@ -19,6 +19,7 @@
 
 .baseLaranja > input {
     
+    padding-left: 1vh;
     min-height: 35px;
     min-width: 100%;
     margin: 8px 0;
@@ -40,4 +41,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
+}
+
+.buttonContent{
+    margin-top: 2vh;
 }

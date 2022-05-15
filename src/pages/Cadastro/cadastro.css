@@ -29,6 +29,7 @@
 
 .base > input {
     
+    padding-left: 1vh;
     height: 60%;
     width: 55%;
     margin: 8px 0;

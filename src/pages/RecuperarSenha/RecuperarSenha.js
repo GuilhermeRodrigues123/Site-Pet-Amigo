@@ -20,7 +20,7 @@ return(
         <input type = "text" placeholder ="Email"></input>
 
         <div className = "buttonContent"><button className="cadbutton"
-                onClick={()=>{alert("O Email informado não está")}}>ENVIAR</button></div>
+                onClick={()=>{alert("As instruções para redefinir sua senha foram enviadas ao seu email!")}}>ENVIAR</button></div>
 
         <div>
             <button onClick={() => {history(-1);}}>

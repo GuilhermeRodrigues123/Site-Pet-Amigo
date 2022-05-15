@@ -1,0 +1,23 @@
+.cardGrupo{
+    display: flex;
+}
+
+.cardStyle{
+    font-family: 'Poppins', semi-bold;
+    font-size: 15px;
+    border: 4px solid #6E2594;
+    border-radius: 10px;
+}
+
+.showMoreB{
+    font-family: 'Poppins' semi-bold;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundoGroupCard{
+    background-color: #FAF4D3;
+}
