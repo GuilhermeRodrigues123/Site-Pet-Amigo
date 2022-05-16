@@ -1,11 +1,13 @@
 .mae{
-    padding: 20vh 10vw;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: #FAF4D3;
     justify-content: space-around;
+    column-gap: 50px;
+    row-gap: 50px;
+    padding: 20vh 10vw;
 
 }
 
@@ -14,11 +16,26 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 25vw;
-    height: 80vh;
+    width: 400px;
+    height: 70vh;
+    min-height: 600px;
     background-color: #FFC759;
     border-radius: 18px;
     border: 4px solid #6E2594;
+}
+.meusPets{
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 400px;
+    height: 70vh;
+    min-height: 600px;
+    background-color: #6E2594;
+    border-radius: 18px;
+    border: 4px solid #000000;
+    color: white;
 }
 
 .dadosPerfil{
@@ -34,26 +51,13 @@
 }
 
 .imagem{
+    width: 30%;
     object-fit: contain;
     border: 4px double green;
 }
 
-.meusPets{
-    padding-top: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 25vw;
-    height: 80vh;
-    background-color: #6E2594;
-    border-radius: 18px;
-    border: 4px solid #000000;
-    color: white;
-}
-
 .perfilText{
-    margin-top: 15%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     font-family: 'Bebas Neue', sans-serif;
@@ -77,14 +81,29 @@
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
-    margin-top: 6%;
+    margin-top: 5%;
     border: 4px double green;
 }
 
-.base > input{
-    height: 60%;
-    width: 55%;
-    margin: 8px 0;
-    border-radius: 6px;
-    border: 0px;
+.dadosPerfil input{
+    width: 100%;
+}
+
+
+@media (max-width: 500px){
+    .meusPets{
+        width: 100%;
+    }
+    .meuPerfil{
+        width: 100%;
+    }
+    .perfilText{
+        font-size: 20px;
+    }
+    .perfilSubtext{
+        font-size: 9px;
+    }
+    .dados input{
+        height: 1000px;
+    }
 }
