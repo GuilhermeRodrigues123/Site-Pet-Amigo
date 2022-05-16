@@ -7,8 +7,9 @@
     justify-content: center;
     align-items: center; /*Vertical */
     flex-direction: column;    
-    width: 40vw;
+    width: 500px;
     height: 50vh;
+    min-height: 500px;
     background-color: #FFB100;
     border-radius: 15px;
     font-family: 'Poppins', sans-serif;
@@ -21,8 +22,9 @@
     justify-content: center;
     align-items: center; /*Vertical */
     flex-direction: column;    
-    width: 25vw;
+    width: 500px;
     height: 50vh;
+    min-height: 500px;
     background-color: #D5B3FF;
     border-radius: 15px;
     font-family: 'Poppins', sans-serif;
@@ -31,24 +33,30 @@
 }
 
 .imagem{
-    margin-bottom: 10% auto;
-    width: 15%;
-    height: 15%;
+    object-fit: contain;
+    margin-bottom: 5%;
+    width: 20%;
 }
 
-.textoCad{
+.textoCad{ 
     margin-top: 5%;
     padding: 20px 30px;
-    align-items: center;
+}
+
+.cadastro p2{
+    font-size: 12px;
 }
 
 .mom{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    padding: 20vh 10vw;
     justify-content: space-around;
+    column-gap: 50px;
+    row-gap: 50px;
+    padding: 20vh 10vw;
 }
 
 .buttonContent{
@@ -81,4 +89,16 @@
     stroke-width: 30px;
     align-self: flex-end; /*Joga apenas essa div pro centro*/
     border: 0px;
+}
+
+@media (max-width: 600px) {
+    .cadastro h1{
+        font-size: 22px;
+    }
+    .cadastro p1{
+        font-size: 14px ;
+    }
+    .cadastro p2{
+        font-size: 10px;
+    }
 }

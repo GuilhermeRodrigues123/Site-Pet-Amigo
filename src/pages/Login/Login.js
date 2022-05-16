@@ -30,9 +30,9 @@ function Login(){
         <img className="imagem" src = "/images/img1.png"></img>
         <div className="textoCad"> 
             <h1>Bem vindo!</h1>
-            <p1>Para acessar a sua conta, faça login ao lado.</p1>
+            <p1>Para acessar suas informações, por favor, entre em sua conta.</p1>
             <p></p>
-            <p2>Não tem uma conta? Clique aqui e cadastre-se!</p2>
+            <p2>Não tem uma conta? Clique aqui!</p2>
         </div>
         <div className = "buttonContent"><button className = "cadastroButton"> Cadastre-se</button></div>
       </div>
