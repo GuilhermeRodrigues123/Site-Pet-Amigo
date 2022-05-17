@@ -1,6 +1,7 @@
 import React from 'react';
 //import React, { useState } from 'react';
-import './HeaderFooter'
+import './headerfooter.css'
+import '../global.css'
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import{Form} from "react-bootstrap";
@@ -8,14 +9,9 @@ import{FormControl} from "react-bootstrap";
 
 
 
-function HeaderFooter(){
+function HeaderFooter(props){
     return(
     <>
-    <head>
-        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');</style>
-        <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@700&display=swap');</style>
-        <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&family=Poppins:wght@700&display=swap');</style>
-    </head>
     <body>
         <header>
             <img className ="logo" src = "./images/logo.png" alt ="Logo"></img>
@@ -31,7 +27,7 @@ function HeaderFooter(){
             </Form>
             <img className ="perfil" src = "./images/conta.svg" alt ="conta"></img>         
         </header>
-        
+        {props.children}
         <footer>
             <div className = "footer_left">
                 <img className ="logo" src = "./images/logo_alt.svg" alt ="Logo"></img>
