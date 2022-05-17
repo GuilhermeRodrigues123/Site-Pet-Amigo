@@ -7,6 +7,7 @@ import PreLoad from './pages/PreLoad';
 import MeuPerfil from './pages/MeuPerfil';
 import AnimaisParaAdocao from './pages/AnimaisParaAdocao';
 import RecuperarSenha from './pages/RecuperarSenha';
+import Contato from './pages/Contato';
 
 
 function Rotas(){
@@ -20,6 +21,7 @@ function Rotas(){
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/cadastro' element={<Cadastro/>}/>
                 <Route path='/recuperar-senha' element={<RecuperarSenha/>}/>
+                <Route path='/contato' element={<Contato/>}/>
             </Routes>
         </BrowserRouter>
     );
