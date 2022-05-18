@@ -7,7 +7,7 @@ import { Button } from "react-bootstrap";
 import "./animaisParaAdocao.css"
 
 
-const vetorPets=[
+const vetorPets = [
     {
         nome: 'Nome: Usopp',
         idade: 'Idade: 1 ano',
@@ -66,10 +66,10 @@ const vetorPets=[
         especie: 'Espécie: Cachorro',
         porte: 'Porte: Grande',
     },
-    
+
 ];
 
-const vetorPets2=[
+const vetorPets2 = [
     {
         nome: 'Nome: Cleo',
         idade: 'Idade: 2 anos',
@@ -107,73 +107,119 @@ function AnimaisParaAdocao() {
 
     return (
         <div>
-            
+
             <h1>Animais para adocao</h1>
             <button onClick={() => { history(-1); }}>
                 retornar
             </button>
-            <div className = "cardGrupo">
+            <div className='geral'>
+            <div className="cardGrupo3">
                 <Container>
-                <Row xs={1} md={3} className="g-4">
-                    {Array.from({ length: 6 }).map((_, idx) => (
-                        <Col>
-                            <Card className = "cardStyle"
-                                bg= 'warning'
-                                text='dark'>
-                                <Card.Img variant="top"  src={vetorPets[idx].imagem}/>
-                                <Card.Body>
-                                    <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
-                                    <Card.Text>{vetorPets[idx].idade}</Card.Text>
-                                    <Card.Text>{vetorPets[idx].porte}</Card.Text>
-                                    <Button variant="primary">Favoritar</Button>{' '}
-                                </Card.Body>
-                            </Card>
-                            
-                        </Col>
-                    ))}
-                </Row>
+                    <Row xs={1} md={3} className="g-4">
+                        {Array.from({ length: 6 }).map((_, idx) => (
+                            <Col>
+                                <Card className="cardStyle"
+                                    bg='warning'
+                                    text='dark'>
+                                    <Card.Img variant="top" src={vetorPets[idx].imagem} />
+                                    <Card.Body>
+                                        <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
+                                        <Card.Text>{vetorPets[idx].idade}</Card.Text>
+                                        <Card.Text>{vetorPets[idx].porte}</Card.Text>
+                                        <Button variant="primary">Favoritar</Button>{' '}
+                                    </Card.Body>
+                                </Card>
+
+                            </Col>
+                        ))}
+                    </Row>
                 </Container>
             </div>
-        <div className = "showMoreB">
-        <Button variant = "warning"
-            onClick={() => setOpen(!open)}
-            aria-controls="example-collapse-text"
-            aria-expanded={open}>
-                Ver mais
-      </Button>
-      </div>
+            <div className="cardGrupo2">
+                <Container>
+                    <Row xs={1} md={2} className="g-4">
+                        {Array.from({ length: 6 }).map((_, idx) => (
+                            <Col>
+                                <Card className="cardStyle"
+                                    bg='warning'
+                                    text='dark'>
+                                    <Card.Img variant="top" src={vetorPets[idx].imagem} />
+                                    <Card.Body>
+                                        <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
+                                        <Card.Text>{vetorPets[idx].idade}</Card.Text>
+                                        <Card.Text>{vetorPets[idx].porte}</Card.Text>
+                                        <Button variant="primary">Favoritar</Button>{' '}
+                                    </Card.Body>
+                                </Card>
 
-      <div style={{minHeight: '150px'}}>
-        <Collapse in={open} dimension="width">
-          <div className = "fundoGroupCard">
-                
-          <Container>
-            <Row xs={1} md={3} className="g-4">
-                {Array.from({ length: 4 }).map((_, idx) => (
-                    <Col>
-                    
-                        <Card className = "cardStyle"
-                            bg= 'warning'
-                            text='dark'>
-                            <Card.Img variant="top"  src={vetorPets2[idx].imagem}/>
-                            <Card.Body>
-                                <Card.Text>{vetorPets2[idx].nome};  {vetorPets2[idx].especie}</Card.Text>
-                                <Card.Text>{vetorPets2[idx].idade}</Card.Text>
-                                <Card.Text>{vetorPets2[idx].porte}</Card.Text>
-                                <Button variant="primary">Favoritar</Button>{' '}
-                            </Card.Body>
-                        </Card>
-                        
-                    </Col>
-                ))}
-            </Row>
-            </Container>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+            </div>
+            <div className="cardGrupo1">
+                <Container>
+                    <Row xs={1} md={1} className="g-4">
+                        {Array.from({ length: 6 }).map((_, idx) => (
+                            <Col>
+                                <Card className="cardStyle"
+                                    bg='warning'
+                                    text='dark'>
+                                    <Card.Img variant="top" src={vetorPets[idx].imagem} />
+                                    <Card.Body>
+                                        <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
+                                        <Card.Text>{vetorPets[idx].idade}</Card.Text>
+                                        <Card.Text>{vetorPets[idx].porte}</Card.Text>
+                                        <Button variant="primary">Favoritar</Button>{' '}
+                                    </Card.Body>
+                                </Card>
 
-          </div>
-        </Collapse>
-      </div>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+            </div>
+            <div className="showMoreB">
+                <Button variant="warning"
+                    onClick={() => setOpen(!open)}
+                    aria-controls="example-collapse-text"
+                    aria-expanded={open}>
+                    Ver mais
+                </Button>
+            </div>
 
-    </div>
+            <div style={{ minHeight: '400px' }}>
+                <Collapse in={open} dimension="width">
+                    <div className="fundoGroupCard">
+
+                        <Container>
+                            <Row xs={1} md={3} className="g-4">
+                                {Array.from({ length: 4 }).map((_, idx) => (
+                                    <Col>
+
+                                        <Card className="cardStyle"
+                                            bg='warning'
+                                            text='dark'>
+                                            <Card.Img variant="top" src={vetorPets2[idx].imagem} />
+                                            <Card.Body>
+                                                <Card.Text>{vetorPets2[idx].nome};  {vetorPets2[idx].especie}</Card.Text>
+                                                <Card.Text>{vetorPets2[idx].idade}</Card.Text>
+                                                <Card.Text>{vetorPets2[idx].porte}</Card.Text>
+                                                <Button variant="primary">Favoritar</Button>{' '}
+                                            </Card.Body>
+                                        </Card>
+
+                                    </Col>
+                                ))}
+                            </Row>
+                        </Container>
+
+                    </div>
+                </Collapse>
+                </div>
+            </div>
+
+        </div>
     );
 }
 
