@@ -25,18 +25,20 @@ header{
     justify-content: space-between;
     width: 100%;
     border-style: dotted;
-}
-
-.header_titles h1{
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+    color: #000000;
+}
+
+.inicio{
+
     text-align: center;
     border-style: dotted;
     margin-right: 1vw;
     margin-left: 1vw;
-    color: #000000;
+
 }
 
 footer{

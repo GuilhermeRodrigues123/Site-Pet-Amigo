@@ -1,7 +1,8 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 //import React, { useState } from 'react';
-import './headerfooter.css'
-import '../global.css'
+import './headerfooter.css';
+import '../global.css';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form } from "react-bootstrap";
@@ -16,10 +17,9 @@ function HeaderFooter(props) {
                 <header>
                     <img className="logo" src="./images/logo.png" alt="Logo"></img>
                     <div className="header_titles">
-                        <h1>Inicio</h1>
-                        <h1>Quero Adotar </h1>
-                        <h1>Sobre nós</h1>
-                        <h1>Login</h1>
+                        <Link to="home">Inicio</Link>
+                        <Link to="animais-para-adocao">Quero adotar</Link>
+                        <Link to="login">Login</Link>
                     </div>
                     <Form className="d-flex">
                         <FormControl className="pesquisa" type="search" placeholder="Pesquisa" aria-label="Pesquisa" />
