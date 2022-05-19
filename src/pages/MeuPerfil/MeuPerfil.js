@@ -1,9 +1,9 @@
 import React,{ useState } from 'react';
-import {useNavigate} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import "./meuPerfil.css"
 
 function MeuPerfil(){
-    const history = useNavigate();
+    const history = useHistory();
     return (
         <div className = "mae">
             <div className = "meuPerfil">
@@ -23,7 +23,7 @@ function MeuPerfil(){
                     <input className="dados" type="text" placeholder ="Endereço" name = "endereco"/>
                 </div>
 
-                <button onClick={() => {history(-1);}}>
+                <button onClick={() => {history.push(-1);}}>
                     retornar
                 </button>
             </div>

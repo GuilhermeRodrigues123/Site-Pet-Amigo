@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import "../../global.css"
 import "./login.css"
 
 function Login() {
-  const history = useNavigate();
+  const history = useHistory();
   const [email, setEmail] = useState();
   const [senha, setSenha] = useState();
 

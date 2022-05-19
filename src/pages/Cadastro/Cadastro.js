@@ -1,9 +1,9 @@
 import React,{ useState } from 'react';
-import {useNavigate} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import "./cadastro.css"
 
 function Cadastro(){
-    const history = useNavigate();
+    const history = useHistory();
     const[cadUser, setCadUser] = useState([]);
 
     function UpdateUser(event) {
@@ -25,7 +25,7 @@ function Cadastro(){
                 <div className="texto">Para criar sua conta, por favor preencha os dados abaixo: </div>
                 <div className='dados'>
                     <input type="text" placeholder ="Nome" name ="nome"
-                            onChange={UpdateUser}/>
+                        onChange={UpdateUser}/>
                     {/* Setando a característica Nome do objeto*/}
                     <input type="text" placeholder ="CPF" name = "cpf" 
                         onChange={UpdateUser}/>
@@ -44,7 +44,7 @@ function Cadastro(){
                 onClick={()=>{alert("Cadastro realizado com sucesso!")}}>CADASTRAR</button></div>
                 
                 <div>
-                    <button onClick={() => {history(-1);}}>
+                    <button onClick={() => {history.push(-1);}}>
                         retornar
                     </button>
                 </div>

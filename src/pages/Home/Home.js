@@ -1,8 +1,8 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 
 function Home(){
-    const history = useNavigate();
+    const history = useHistory();
     return (
         <div>
             <h1>Home</h1>

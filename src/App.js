@@ -2,7 +2,7 @@ import React from 'react';
 import Rotas from './rotas';
 
 function App() {
-  return <Rotas/>;
+  return (<div><Rotas/></div>);
 }
 
 export default App;

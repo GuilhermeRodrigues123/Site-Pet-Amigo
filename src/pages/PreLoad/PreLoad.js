@@ -1,35 +1,35 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
-function PreLoad(){
-    const history = useNavigate();
-    return(
+function PreLoad() {
+    const history = useHistory();
+    return (
         <div>
             <h1>PreLoad</h1>
             <div>
-            <button onClick={() => {history("home");}}>
-                Home
-            </button>
+                <button onClick={() => { history.push("/home"); }}>
+                    Home
+                </button>
             </div>
             <div>
-            <button onClick={() => {history("animais-para-adocao");}}>
-                Animais para adocao
-            </button>
+                <button onClick={() => { history.push("/animais-para-adocao"); }}>
+                    Animais para adocao
+                </button>
             </div>
             <div>
-            <button onClick={() => {history("login");}}>
-                Login
-            </button>
+                <button onClick={() => { history.push("/login"); }}>
+                    Login
+                </button>
             </div>
             <div>
-            <button onClick={() => {history("cadastro");}}>
-                Cadastro
-            </button>
+                <button onClick={() => { history.push("/cadastro"); }}>
+                    Cadastro
+                </button>
             </div>
             <div>
-            <button onClick={() => {history("meu-perfil");}}>
-                Meu perfil
-            </button>
+                <button onClick={() => { history.push("/meu-perfil"); }}>
+                    Meu perfil
+                </button>
             </div>
         </div>
     );
