@@ -1,22 +1,24 @@
 
-
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 header{
     position: fixed;
     width: 100%;
     height: 200px;
     max-height: 20vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding: 5vh 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 5vw;
 
     background: #FFB100;
-    border-radius: 5px;
+    border: black;
+    border-style:ridge;
 }
 
 .header_titles{
@@ -29,7 +31,11 @@ header{
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
+}
+
+.links{
     color: #000000;
+    text-decoration: none;
 }
 
 .inicio{
@@ -42,14 +48,10 @@ header{
 }
 
 footer{
-    position: absolute;
-    top: 100%;
+    position: relative;
     width: 100%;
     height: 50vh;
-    padding-left: 10vw;
-    padding-right: 20vw;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding: 10vh 20vw 10vh 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,6 +109,9 @@ footer{
 
 
 @media (max-width: 1024px){
+    footer{
+        padding-right: 10vw;
+    }
     .footer_right h1{
         font-size: 18px;
     }

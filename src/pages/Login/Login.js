@@ -34,7 +34,7 @@ function Login() {
           <p></p>
           <p2>Não tem uma conta? Clique aqui!</p2>
         </div>
-        <div className="buttonContent"><button className="cadastroButton"> Cadastre-se</button></div>
+        <div className="buttonContent"><button className="cadastroButton" onClick={() => {history.push("/cadastro");}}> Cadastre-se</button></div>
       </div>
 
       <div className="login">
@@ -62,10 +62,6 @@ function Login() {
             Entrar
           </Button>
         </Form>
-
-        <button onClick={() => { history(-1); }}>
-          retornar
-        </button>
       </div>
     </div>
   );

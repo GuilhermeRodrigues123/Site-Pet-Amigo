@@ -7,24 +7,24 @@
     justify-content: space-around;
     column-gap: 50px;
     row-gap: 50px;
-    padding: 20vh 10vw;
+    padding: 30vh 10vw;
 
 }
 
 .meuPerfil{
-    padding-top: 10vh;
+    padding-top: 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 400px;
-    height: 70vh;
-    min-height: 600px;
+    max-height: 80vh;
+    height: 600px;
     background-color: #FFC759;
     border-radius: 18px;
     border: 4px solid #6E2594;
 }
 .meusPets{
-    padding-top: 10vh;
+    padding-top: 10%;
     display: flex;
     align-items: center;
     justify-content: flex-start;

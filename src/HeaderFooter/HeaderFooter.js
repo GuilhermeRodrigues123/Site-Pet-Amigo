@@ -17,9 +17,9 @@ function HeaderFooter(props) {
                 <header>
                     <img className="logo" src="./images/logo.png" alt="Logo"></img>
                     <div className="header_titles">
-                        <Link to="home">Inicio</Link>
-                        <Link to="animais-para-adocao">Quero adotar</Link>
-                        <Link to="login">Login</Link>
+                        <Link className="links" to="home">Inicio</Link>
+                        <Link className="links" to="animais-para-adocao" >Quero adotar</Link>
+                        <Link className="links" to="login">Login</Link>
                     </div>
                     <Form className="d-flex">
                         <FormControl className="pesquisa" type="search" placeholder="Pesquisa" aria-label="Pesquisa" />
@@ -27,9 +27,7 @@ function HeaderFooter(props) {
                     </Form>
                     <img className="perfil" src="./images/conta.svg" alt="conta"></img>
                 </header>
-                <div className='pagina'>
-                    {props.children}
-                </div>
+                {props.children}
                 <footer>
                     <div className="footer_left">
                         <img className="logo" src="./images/logo_alt.svg" alt="Logo"></img>
