@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 //import React, { useState } from 'react';
-import './headerfooter.css';
+import './HeaderFooter.css';
 import '../global.css';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,10 +21,6 @@ function HeaderFooter(props) {
                         <Link className="links" to="animais-para-adocao" >Quero adotar</Link>
                         <Link className="links" to="login">Login</Link>
                     </div>
-                    <Form className="d-flex">
-                        <FormControl className="pesquisa" type="search" placeholder="Pesquisa" aria-label="Pesquisa" />
-                        <Button className="butaoPesquisa" variant="outline-primary">Buscar</Button>
-                    </Form>
                     <img className="perfil" src="./images/conta.svg" alt="conta"></img>
                 </header>
                 {props.children}

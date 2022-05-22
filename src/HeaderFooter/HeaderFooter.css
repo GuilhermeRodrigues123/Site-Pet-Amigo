@@ -24,7 +24,7 @@ header{
 .header_titles{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     border-style: dotted;
     font-family: 'Poppins', sans-serif;
@@ -83,10 +83,6 @@ footer{
     font-weight: 400;
     font-size: 30px;
     border-style: dotted;
-}
-.d-flex{
-    border-style: dotted;
-    width: 30vw;
 }
 
 .footer_contato{
