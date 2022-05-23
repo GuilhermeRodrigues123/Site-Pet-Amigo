@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../global.css"
 import { Card, Row, Col, Collapse, Container } from "react-bootstrap";
@@ -102,7 +102,7 @@ const vetorPets2 = [
 ];
 
 function AnimaisParaAdocao() {
-    const history = useNavigate();
+    const history = useHistory();
     const [open, setOpen] = useState(false);
 
     return (
@@ -113,109 +113,109 @@ function AnimaisParaAdocao() {
                 retornar
             </button>
             <div className='geral'>
-            <div className="cardGrupo3">
-                <Container>
-                    <Row xs={1} md={3} className="g-4">
-                        {Array.from({ length: 6 }).map((_, idx) => (
-                            <Col>
-                                <Card className="cardStyle"
-                                    bg='warning'
-                                    text='dark'>
-                                    <Card.Img variant="top" src={vetorPets[idx].imagem} />
-                                    <Card.Body>
-                                        <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
-                                        <Card.Text>{vetorPets[idx].idade}</Card.Text>
-                                        <Card.Text>{vetorPets[idx].porte}</Card.Text>
-                                        <Button variant="primary">Favoritar</Button>{' '}
-                                    </Card.Body>
-                                </Card>
+                <div className="cardGrupo3">
+                    <Container>
+                        <Row xs={1} md={3} className="g-4">
+                            {Array.from({ length: 6 }).map((_, idx) => (
+                                <Col>
+                                    <Card className="cardStyle"
+                                        bg='warning'
+                                        text='dark'>
+                                        <Card.Img variant="top" src={vetorPets[idx].imagem} />
+                                        <Card.Body>
+                                            <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
+                                            <Card.Text>{vetorPets[idx].idade}</Card.Text>
+                                            <Card.Text>{vetorPets[idx].porte}</Card.Text>
+                                            <Button variant="primary">Favoritar</Button>{' '}
+                                        </Card.Body>
+                                    </Card>
 
-                            </Col>
-                        ))}
-                    </Row>
-                </Container>
-            </div>
-            <div className="cardGrupo2">
-                <Container>
-                    <Row xs={1} md={2} className="g-4">
-                        {Array.from({ length: 6 }).map((_, idx) => (
-                            <Col>
-                                <Card className="cardStyle"
-                                    bg='warning'
-                                    text='dark'>
-                                    <Card.Img variant="top" src={vetorPets[idx].imagem} />
-                                    <Card.Body>
-                                        <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
-                                        <Card.Text>{vetorPets[idx].idade}</Card.Text>
-                                        <Card.Text>{vetorPets[idx].porte}</Card.Text>
-                                        <Button variant="primary">Favoritar</Button>{' '}
-                                    </Card.Body>
-                                </Card>
+                                </Col>
+                            ))}
+                        </Row>
+                    </Container>
+                </div>
+                <div className="cardGrupo2">
+                    <Container>
+                        <Row xs={1} md={2} className="g-4">
+                            {Array.from({ length: 6 }).map((_, idx) => (
+                                <Col>
+                                    <Card className="cardStyle"
+                                        bg='warning'
+                                        text='dark'>
+                                        <Card.Img variant="top" src={vetorPets[idx].imagem} />
+                                        <Card.Body>
+                                            <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
+                                            <Card.Text>{vetorPets[idx].idade}</Card.Text>
+                                            <Card.Text>{vetorPets[idx].porte}</Card.Text>
+                                            <Button variant="primary">Favoritar</Button>{' '}
+                                        </Card.Body>
+                                    </Card>
 
-                            </Col>
-                        ))}
-                    </Row>
-                </Container>
-            </div>
-            <div className="cardGrupo1">
-                <Container>
-                    <Row xs={1} md={1} className="g-4">
-                        {Array.from({ length: 6 }).map((_, idx) => (
-                            <Col>
-                                <Card className="cardStyle"
-                                    bg='warning'
-                                    text='dark'>
-                                    <Card.Img variant="top" src={vetorPets[idx].imagem} />
-                                    <Card.Body>
-                                        <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
-                                        <Card.Text>{vetorPets[idx].idade}</Card.Text>
-                                        <Card.Text>{vetorPets[idx].porte}</Card.Text>
-                                        <Button variant="primary">Favoritar</Button>{' '}
-                                    </Card.Body>
-                                </Card>
+                                </Col>
+                            ))}
+                        </Row>
+                    </Container>
+                </div>
+                <div className="cardGrupo1">
+                    <Container>
+                        <Row xs={1} md={1} className="g-4">
+                            {Array.from({ length: 6 }).map((_, idx) => (
+                                <Col>
+                                    <Card className="cardStyle"
+                                        bg='warning'
+                                        text='dark'>
+                                        <Card.Img variant="top" src={vetorPets[idx].imagem} />
+                                        <Card.Body>
+                                            <Card.Text>{vetorPets[idx].nome};  {vetorPets[idx].especie}</Card.Text>
+                                            <Card.Text>{vetorPets[idx].idade}</Card.Text>
+                                            <Card.Text>{vetorPets[idx].porte}</Card.Text>
+                                            <Button variant="primary">Favoritar</Button>{' '}
+                                        </Card.Body>
+                                    </Card>
 
-                            </Col>
-                        ))}
-                    </Row>
-                </Container>
-            </div>
-            <div className="showMoreB">
-                <Button variant="warning"
-                    onClick={() => setOpen(!open)}
-                    aria-controls="example-collapse-text"
-                    aria-expanded={open}>
-                    Ver mais
-                </Button>
-            </div>
+                                </Col>
+                            ))}
+                        </Row>
+                    </Container>
+                </div>
+                <div className="showMoreB">
+                    <Button variant="warning"
+                        onClick={() => setOpen(!open)}
+                        aria-controls="example-collapse-text"
+                        aria-expanded={open}>
+                        Ver mais
+                    </Button>
+                </div>
 
-            <div style={{ minHeight: '400px' }}>
-                <Collapse in={open} dimension="width">
-                    <div className="fundoGroupCard">
+                <div style={{ minHeight: '400px' }}>
+                    <Collapse in={open} dimension="width">
+                        <div className="fundoGroupCard">
 
-                        <Container>
-                            <Row xs={1} md={3} className="g-4">
-                                {Array.from({ length: 4 }).map((_, idx) => (
-                                    <Col>
+                            <Container>
+                                <Row xs={1} md={3} className="g-4">
+                                    {Array.from({ length: 4 }).map((_, idx) => (
+                                        <Col>
 
-                                        <Card className="cardStyle"
-                                            bg='warning'
-                                            text='dark'>
-                                            <Card.Img variant="top" src={vetorPets2[idx].imagem} />
-                                            <Card.Body>
-                                                <Card.Text>{vetorPets2[idx].nome};  {vetorPets2[idx].especie}</Card.Text>
-                                                <Card.Text>{vetorPets2[idx].idade}</Card.Text>
-                                                <Card.Text>{vetorPets2[idx].porte}</Card.Text>
-                                                <Button variant="primary">Favoritar</Button>{' '}
-                                            </Card.Body>
-                                        </Card>
+                                            <Card className="cardStyle"
+                                                bg='warning'
+                                                text='dark'>
+                                                <Card.Img variant="top" src={vetorPets2[idx].imagem} />
+                                                <Card.Body>
+                                                    <Card.Text>{vetorPets2[idx].nome};  {vetorPets2[idx].especie}</Card.Text>
+                                                    <Card.Text>{vetorPets2[idx].idade}</Card.Text>
+                                                    <Card.Text>{vetorPets2[idx].porte}</Card.Text>
+                                                    <Button variant="primary">Favoritar</Button>{' '}
+                                                </Card.Body>
+                                            </Card>
 
-                                    </Col>
-                                ))}
-                            </Row>
-                        </Container>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            </Container>
 
-                    </div>
-                </Collapse>
+                        </div>
+                    </Collapse>
                 </div>
             </div>
 
