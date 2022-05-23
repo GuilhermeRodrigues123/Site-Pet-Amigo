@@ -1,0 +1,62 @@
+.geral{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.cardGrupo{
+    display: flex;
+}
+
+.cardStyle{
+    font-family: 'Poppins', semi-bold;
+    font-size: 15px;
+    border: 4px solid #6E2594;
+    border-radius: 10px;
+    max-width: 21rem;
+    margin: 0 auto;
+}
+
+
+.showMoreB{
+    font-family: 'Poppins' semi-bold;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundoGroupCard{
+    background-color: #FAF4D3;
+}
+
+.cardGrupo3{
+    flex-wrap: wrap;
+}
+.cardGrupo2{
+    display: none;
+}
+.cardGrupo1{
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .cardGrupo3{
+        display: none;
+    }
+    .cardGrupo2{
+        display: block;
+    }
+}
+
+@media (max-width: 1000px) {
+    .cardGrupo2{
+        display: none;
+    }
+    .cardGrupo1{
+        display: block;
+    }
+    .cardStyle{
+        width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+
+.baseLaranja{
+
+    padding: 3% 7%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 35%;
+    height: 45%;
+    background-color: #FFC759;
+    border-radius: 18px;
+    margin-left: 0%;
+    font-size: 13px;
+    font-family: 'Poppins', semi-bold;
+    border: 4px solid #6E2594;
+    align-items: center;
+
+}
+
+.baseLaranja > input {
+    
+    padding-left: 1vh;
+    min-height: 35px;
+    min-width: 100%;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 0px;
+}
+
+.recText{
+    
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    align-items: center;
+}
+
+.texto1{
+    
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.buttonContent{
+    margin-top: 2vh;
+}
