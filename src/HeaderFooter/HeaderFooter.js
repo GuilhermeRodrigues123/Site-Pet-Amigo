@@ -3,10 +3,7 @@ import {Link} from "react-router-dom";
 //import React, { useState } from 'react';
 import './HeaderFooter.css';
 import '../global.css';
-import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form } from "react-bootstrap";
-import { FormControl } from "react-bootstrap";
 
 
 
