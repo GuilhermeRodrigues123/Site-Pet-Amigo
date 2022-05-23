@@ -8,8 +8,7 @@ import MeuPerfil from './pages/MeuPerfil';
 import AnimaisParaAdocao from './pages/AnimaisParaAdocao';
 import HeaderFooter from './HeaderFooter/HeaderFooter';
 
-
-function Rotas() {
+function Rotas(){
     return (
         <BrowserRouter>
             <HeaderFooter>

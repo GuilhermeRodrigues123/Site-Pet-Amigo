@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import {useHistory} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../global.css"
 import{Card} from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
 function AnimaisParaAdocao(){
-    const history = useHistory();
+    const history = useNavigate();
     return (
         <div>
             <Card style={{ width: '18rem' }}>

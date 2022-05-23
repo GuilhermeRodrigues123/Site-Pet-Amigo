@@ -1,109 +1,52 @@
-.mae{
+.fundo1{
+
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     height: 100%;
     width: 100%;
-    justify-content: space-around;
-    column-gap: 50px;
-    row-gap: 50px;
-    padding: 30vh 10vw;
+    background-color: #FAF4D3;
+    justify-content: center;
 
 }
 
-.meuPerfil{
-    padding-top: 5%;
+.base2{
+
+    padding: 30px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 400px;
-    max-height: 80vh;
-    height: 600px;
-    background-color: #FFC759;
-    border-radius: 18px;
-    border: 4px solid #6E2594;
-}
-.meusPets{
-    padding-top: 5%;
-    display: flex;
-    align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    width: 400px;
-    height: 70vh;
-    min-height: 600px;
-    background-color: #6E2594;
+    width: 23%;
+    height: 85%;
+    background-color: #FFC759;
     border-radius: 18px;
-    border: 4px solid #000000;
-    color: white;
-}
+    margin-right: 50%;
+    border: 4px solid #6E2594;
 
-.dadosPerfil{
-    width: 80%;
-    border: 4px double green;
-}
-
-.dados{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.imagem{
-    width: 30%;
-    object-fit: contain;
-    border: 4px double green;
 }
 
 .perfilText{
-    margin-top: 5%;
+
+    margin-top: 15%;
     display: flex;
     justify-content: center;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 30px;
-    border: 4px double green;
-}
 
-.meuPerfil h1{
-    text-decoration: underline #6E2594;
-    /*text-decoration-thickness: 80px;
-    border-bottom: 1px solid red;*/
-}
- 
-.meusPets h1{
-    text-decoration: underline #FFC759;
-    
 }
 
 .perfilSubtext{
+
     display: flex;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
-    margin-top: 5%;
-    border: 4px double green;
+    margin-top: 6%;
 }
 
-.dadosPerfil input{
-    width: 100%;
-}
-
-
-@media (max-width: 500px){
-    .meusPets{
-        width: 100%;
-    }
-    .meuPerfil{
-        width: 100%;
-    }
-    .perfilText{
-        font-size: 20px;
-    }
-    .perfilSubtext{
-        font-size: 9px;
-    }
-    .dados input{
-        height: 1000px;
-    }
+.base > input{
+    height: 60%;
+    width: 55%;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 0px;
 }
