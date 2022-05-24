@@ -7,6 +7,7 @@ import PreLoad from './pages/PreLoad';
 import MeuPerfil from './pages/MeuPerfil';
 import AnimaisParaAdocao from './pages/AnimaisParaAdocao';
 import HeaderFooter from './HeaderFooter/HeaderFooter';
+import Contato from './pages/Contato';
 
 function Rotas(){
     return (
@@ -19,6 +20,7 @@ function Rotas(){
                 <Route path='/home' component={Home} />
                 <Route path='/login' component={Login} />
                 <Route path='/cadastro' component={Cadastro} />
+                <Route path='/contato' component={Contato} />
             </HeaderFooter>
         </BrowserRouter>
     );
