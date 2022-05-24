@@ -12,8 +12,8 @@ function Rotas(){
     return (
         <BrowserRouter>
             <HeaderFooter>
-                {/* <Route component={() => <Redirect to="/preload" />} /> */}
-                <Route path='/preload' component={PreLoad} />
+                {/*<Route component={() => <Redirect to="/preload" />} />*/}
+                <Route exact path= '/' component={PreLoad} />
                 <Route path='/animais-para-adocao' component={AnimaisParaAdocao} />
                 <Route path='/meu-perfil' component={MeuPerfil} />
                 <Route path='/home' component={Home} />

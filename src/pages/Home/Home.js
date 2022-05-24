@@ -8,8 +8,10 @@ import "./home.css"
 function Home() {
     const history = useHistory();
     return (
+        <div className='fundo1'>
         <div className='mom'>
             <h1>Home</h1>
+            {/*
             <Carousel className="paginaCarrossel" variant="dark">
                 <Carousel.Item>
                     <img onClick={() => { history("/cadastro"); }}
@@ -31,6 +33,7 @@ function Home() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            */}
 
             <div className="homeMom">
                 <div className="textHome">
@@ -73,6 +76,7 @@ function Home() {
                     <p>"A Bella é a minha companheira de viagens! Sempre está comigo!"</p>
                 </div>
             </div>
+        </div>
         </div>
     );
 }
