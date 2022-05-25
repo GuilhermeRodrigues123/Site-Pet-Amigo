@@ -7,3 +7,6 @@ export const login = token => {
 export const logout = () => {
     sessionStorage.removeItem(TOKEN_KEY);
 };
+export const cadastro = token => {
+    sessionStorage.setItem(TOKEN_KEY, token);
+};

@@ -18,11 +18,13 @@ function Login() {
   async function logar(e) {
       e.preventDefault();
       try {
-        const response = await api.post("/login", (email, senha));
+        console.log(email,senha);
+        const response = await api.post("/login", {email, senha});
         alert("Bem Vindo");
         login(response.data.accessToken);
         history.push("/home");
       } catch (error) {
+        console.log("deu erro");
         console.warn(error);
         alert(error.message);
       }
