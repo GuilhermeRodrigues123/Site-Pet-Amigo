@@ -35,7 +35,7 @@ function Home() {
             
             <div className="homeMom">
                 <div className="textHome">
-                    <img src="/images/petHomeimg.png"></img>
+                    <img className="img1" src="/images/petHomeimg.png"></img>
                     <div className="titHome">Por que devo adotar um pet?</div>
                     <p>Você terá um novo companheiro e amigo que fará <br /> parte da sua vida;</p>
                     <p>Você irá ajudar a causa animal, dando um lar a <br /> animais abandonados ou que moram na rua</p>
