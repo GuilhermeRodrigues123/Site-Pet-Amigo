@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../global.css"
 import "./login.css"
 import api from "../../services/api";
+import {login} from "../../services/auth";
 
 function Login() {
   const history = useHistory();
@@ -18,12 +19,14 @@ function Login() {
       e.preventDefault();
       try {
         const response = await api.post("/login", (email, senha));
-        console.log(response);
+        alert("Bem Vindo");
+        login(response.data.accessToken);
+        history.push("/home");
       } catch (error) {
         console.warn(error);
         alert(error.message);
       }
-      history.push("home");
+
   }
 
   return (
