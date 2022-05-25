@@ -10,6 +10,7 @@ function Home() {
     return (
         <div className='mom'>
             <h1>Home</h1>
+            
             <Carousel className="paginaCarrossel" variant="dark">
                 <Carousel.Item>
                     <img onClick={() => { history.push("/animais-para-adocao"); }}
@@ -31,7 +32,7 @@ function Home() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-
+            
             <div className="homeMom">
                 <div className="textHome">
                     <img src="/images/petHomeimg.png"></img>
