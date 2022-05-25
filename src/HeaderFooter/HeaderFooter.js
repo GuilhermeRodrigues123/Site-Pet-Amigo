@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 //import React, { useState } from 'react';
 import './HeaderFooter.css';
 import '../global.css';
@@ -20,8 +20,8 @@ function HeaderFooter(props) {
                         <Link className="links" to="animais-para-adocao" >Quero adotar</Link>
                         <Link className="links" to="login">Login</Link>
                     </div>
-                    <Link className='links' to = "meu-perfil">
-                    <img className="perfil" src="./images/conta.svg" alt="conta" ></img>
+                    <Link className='links' to="meu-perfil">
+                        <img className="perfil" src="./images/conta.svg" alt="conta" ></img>
                     </Link>
                 </header>
                 {props.children}
@@ -33,10 +33,10 @@ function HeaderFooter(props) {
                     </div>
                     <div className='footer_right'>
                         <div className='footer_contato'>
-                        <a className ="links" href ="https://www.instagram.com/cpe.jr/" target="blank">
-                            <img src="./images/insta.svg" alt="insta"></img>
-                            <h1> @PETAMIGO</h1>
-                        </a>
+                            <a className="links" href="https://www.instagram.com/cpe.jr/" target="blank">
+                                <img src="./images/insta.svg" alt="insta"></img>
+                                <h1> @PETAMIGO</h1>
+                            </a>
                         </div>
                         <div className='footer_contato'>
                             <img src="./images/zap.svg" alt="insta"></img>

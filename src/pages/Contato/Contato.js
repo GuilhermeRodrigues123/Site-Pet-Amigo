@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import {useHistory} from 'react-router-dom';
-import{Form} from "react-bootstrap";
+import { useHistory } from 'react-router-dom';
+import { Form } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -56,7 +56,7 @@ function Login() {
           <Button className="loginButton" variant="primary" type="submit">
             Enviar
           </Button>
-          </Form>
+        </Form>
         <button onClick={() => { history(-1); }}>
           retornar
         </button>
