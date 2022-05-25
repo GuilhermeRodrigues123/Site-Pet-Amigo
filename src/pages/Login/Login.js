@@ -6,21 +6,25 @@ import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../global.css"
 import "./login.css"
+import api from "../../services/api";
 
 function Login() {
   const history = useHistory();
   const [email, setEmail] = useState();
   const [senha, setSenha] = useState();
 
-  /*const history = useHistory();
 
-  function logar(){
-
-    if(email === "teste@teste.com" && senha === "abc"){
-    alert("Bem vindo\n" + email);
-    history.push("home");
-    }else alert("Dados incorretos!");
-  }*/
+  async function logar(e) {
+      e.preventDefault();
+      try {
+        const response = await api.post("/login", (email, senha));
+        console.log(response);
+      } catch (error) {
+        console.warn(error);
+        alert(error.message);
+      }
+      history.push("home");
+  }
 
   return (
 
@@ -34,7 +38,7 @@ function Login() {
           <p></p>
           <p2>Não tem uma conta? Clique aqui!</p2>
         </div>
-        <div className="buttonContent"><button className="cadastroButton" onClick={() => {history.push("/cadastro");}}> Cadastre-se</button></div>
+        <div className="buttonContent"><button className="cadastroButton" onClick={() => { history.push("/cadastro"); }}> Cadastre-se</button></div>
       </div>
 
       <div className="login">
@@ -58,7 +62,7 @@ function Login() {
             <Form.Check type="checkbox" label="Mantenha-me conectado." />
           </Form.Group>
 
-          <Button className="loginButton" variant="primary" type="submit" /*onClick={(logar)}*/>
+          <Button className="loginButton" variant="primary" type="submit" onClick={(logar)}>
             Entrar
           </Button>
         </Form>
