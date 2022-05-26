@@ -17,7 +17,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
       isAuthenticated() ? (
         <Component {...props} />
       ) : (
-        <Redirect to={{ pathname: "/meu-perfil", state: { from: props.location } }} />
+        <Redirect to={{ pathname: "/cadastro", state: { from: props.location } }} />
       )
     }
   />
@@ -29,7 +29,7 @@ function Rotas() {
       <HeaderFooter>
         <Route component={() => <Redirect to="/home" />}/> 
         <Route path='/animais-para-adocao' component={AnimaisParaAdocao} />
-        <Route path='/meu-perfil' component={MeuPerfil} />
+        <PrivateRoute path='/meu-perfil' component={MeuPerfil} />
         <Route path='/home' component={Home} />
         <Route path='/login' component={Login} />
         <Route path='/cadastro' component={Cadastro} />
