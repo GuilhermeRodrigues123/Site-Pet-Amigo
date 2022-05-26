@@ -58,12 +58,16 @@
 }
 
 .textHome {
-    align-self: center;
+    justify-content: center;
+    align-items: center;
     font-family: 'Poppins';
     font-size: 1rem;
     margin-top: 10vh;
     color: #000000;
     column-gap: 50px;
+    border: 5px solid black;
+    background-color: #FFB100;
+    width: 500px;
 }
 
 .textHome2 {
@@ -73,17 +77,24 @@
     margin-top: 10vh;
     color: #000000;
     column-gap: 50px;
+    border: 5px solid black;
+    background-color: #FFB100;
+    width: 500px;
 }
 
 .img1{
     max-width:80%;
     object-fit: contain;
-    align-self: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 .img2 {
     max-width:80%;
     object-fit: contain;
-    align-self: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .homeButton {

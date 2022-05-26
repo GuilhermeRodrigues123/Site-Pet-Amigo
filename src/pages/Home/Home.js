@@ -44,10 +44,10 @@ function Home() {
                 </div>
                 <div className="textHome2">
                     <img className="img2" src="/images/img2Home.png"></img>
-                    <div className="titHome">Um pouco sobre a Pet Amigo</div>
-                    A Pet Amigo é um projeto idealizado a partir de um sonho, <br /> no qual todos os animais têm o direito de viver uma vida digna<br /> e lotada de amor. <br />
-                    Somos uma instituição sem fins lucrativos, responsáveis por <br />tirar os pets da situação de abandono e maus tratos e
-                    criar a <br />ponte entre eles e suas futuras famílias e desde 2010, já <br />resgatamos mais de 1500 animais para serem adotados.
+                    <h1 className="titHome">Um pouco sobre a Pet Amigo</h1>
+                    <p>A Pet Amigo é um projeto idealizado a partir de um sonho, no qual todos os animais têm o direito de viver uma vida digna e lotada de amor. </p>
+                    <p>Somos uma instituição sem fins lucrativos, responsáveis por tirar os pets da situação de abandono e maus tratos e
+                    criar a ponte entre eles e suas futuras famílias e desde 2010, já resgatamos mais de 1500 animais para serem adotados.</p>
                 </div>
             </div>
             <div className="cardMom">
