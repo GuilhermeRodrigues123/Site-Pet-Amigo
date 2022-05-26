@@ -6,13 +6,6 @@
     height: 100%;
     width: 100%;
 }
-.homeMom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    column-gap: 50px;
-    justify-content: center;
-}
 
 .buttonContent {
     min-width: 20rem;
