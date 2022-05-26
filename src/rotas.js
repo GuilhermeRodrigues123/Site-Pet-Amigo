@@ -10,7 +10,6 @@ import HeaderFooter from './HeaderFooter/HeaderFooter';
 import { isAuthenticated } from "./services/auth";
 import Contato from './pages/Contato';
 
-<<<<<<< HEAD
 function Rotas(){
     return (
         <BrowserRouter>
@@ -26,7 +25,7 @@ function Rotas(){
             </HeaderFooter>
         </BrowserRouter>
     );
-=======
+
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
@@ -54,6 +53,7 @@ function Rotas() {
       </HeaderFooter>
     </BrowserRouter>
   );
->>>>>>> primeiraPagina
+
+}
 }
 export default Rotas;
