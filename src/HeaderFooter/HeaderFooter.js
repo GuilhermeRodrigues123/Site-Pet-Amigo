@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import './HeaderFooter.css';
 import '../global.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Menu from '../pages/Menu/Menu'
 
 
 function HeaderFooter(props) {
@@ -12,6 +12,7 @@ function HeaderFooter(props) {
         <>
             <body>
                 <header>
+                    <Menu />
                     <Link className="links" to="home">
                         <img className="logo" src="./images/logo.png" alt="Logo"></img>
                     </Link>
