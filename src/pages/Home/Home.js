@@ -11,7 +11,7 @@ function Home() {
         <div className='mom'>
             <Carousel className="paginaCarrossel" variant="dark">
                 <Carousel.Item>
-                    <img onClick={() => { history("/cadastro"); }}
+                    <img onClick={() => { history.push("/animais-para-adocao"); }}
                         className="carrosselImg"
                         src="/images/banner1.png" />
                 </Carousel.Item>
@@ -40,7 +40,7 @@ function Home() {
                     <p>Vai trazer felicidade para sua casa, pois um pet <br /> pode proporcionar vários momentos de alegria.</p>
                     <p>Escolhendo adotar ao invés de comprar, você<br /> não contribui com a exploração animal.</p>
                     <p>E muitos outros motivos!<br />Não perca tempo, adote um amigo agora mesmo!</p>
-                    <button className="homeButton">Adote aqui</button>
+                    <button className="homeButton" onClick={() => { history.push("/animais-para-adocao"); }}>Adote aqui</button>
                 </div>
                 <div className="textHome2">
                     <img className="img2" src="/images/img2Home.png"></img>

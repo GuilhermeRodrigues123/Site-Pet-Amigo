@@ -21,7 +21,8 @@ function Login() {
         console.log(email,senha);
         const response = await api.post("/login", {email, senha});
         alert("Bem Vindo");
-        login(response.data.accessToken);
+        console.log(response);
+        login(response.data);
         history.push("/home");
       } catch (error) {
         console.log("deu erro");
