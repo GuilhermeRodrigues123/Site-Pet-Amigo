@@ -22,6 +22,9 @@
     background-color: #FFC759;
     border-radius: 18px;
     border: 4px solid #6E2594;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0,0,0,0.24); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0,0,0,0.24);
 }
 .meusPets{
     padding-top: 3%;
@@ -36,6 +39,9 @@
     border-radius: 18px;
     border: 4px solid #000000;
     color: white;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0,0,0,0.24); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0,0,0,0.24);
 }
 
 .dadosPerfil{
