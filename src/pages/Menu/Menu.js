@@ -1,4 +1,4 @@
-import {AppBar, Drawer, IconButton, List, ListItem, ListItemText, Toolbar, Typography} from "@mui/material";
+import { Drawer, IconButton, List, ListItem, ListItemText, Toolbar, Typography} from "@mui/material";
 import React, { useState } from 'react';
 import { IconContext } from "react-icons/lib";
 import {MdHome, MdPets, MdKeyboardTab, MdPerson} from "react-icons/md";
@@ -40,10 +40,7 @@ const pages=[{
 ];
 
     return (
-        <>
-        <AppBar position="static">
-            {props.children}
-        </AppBar>
+        <div className="Container">
         <Toolbar style={{ backgroundColor: "inherit" }}>
          <IconButton edge="start" aria-label="menu" onClick ={()=> {handleDrawer(!open)}}>
              <FiMenu />
@@ -64,8 +61,8 @@ return( <ListItem button selected={currentPage === listItem.pathName} onClick={(
     })}
 
 </List>
-</Drawer>;
-</>
+</Drawer>
+</div>
 );
 }
 
