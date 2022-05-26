@@ -10,8 +10,11 @@
 }
 
 html,
-body,
-div#root{
-    height: 100%;
+body{
+    background-image: url("/public/Images/fundoPetSemFundo.png");
     background-color: #FAF4D3;
+}
+
+div#root{
+    height: 100%;    
 }
