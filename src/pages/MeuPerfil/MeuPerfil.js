@@ -1,9 +1,32 @@
-import React, { useState } from 'react'; 
+import React, { useState,  useEffect } from 'react'; 
 import { useHistory } from 'react-router-dom'; 
-import "./meuPerfil.css" 
+import { getUsuario_id } from '../../services/auth';
+import "./meuPerfil.css";
+import api from "../../services/api";
  
 function MeuPerfil() { 
     const history = useHistory(); 
+    const [dadoUsuario,setDadoUsuario] = useState();
+
+  async function getDadosusuario() {
+      try {
+        const usuario_id = getUsuario_id();
+        console.log(usuario_id);
+        const response = await api.get(`/usuarios/${usuario_id}`);
+        setDadoUsuario(response.data);
+        console.log(response);
+      } catch (error) {
+        console.log("deu erro");
+        console.warn(error);
+        alert(error.message);
+      }
+
+  }
+
+    useEffect(()=> {
+        getDadosusuario();
+    },[]);
+
     return ( 
         <div className="mae"> 
             <div className="meuPerfil"> 
@@ -15,12 +38,10 @@ function MeuPerfil() {
                     Meus dados de cadastro 
                 </div> 
                 <div className='dadosPerfil'> 
-                    <input className="dados" type="text" placeholder="Nome" name="nome" /> 
-                    <input className="dados" type="text" placeholder="CPF" name="cpf" /> 
-                    <input className="dados" type="text" placeholder="Senha" name="senha" /> 
-                    <input className="dados" type="text" placeholder="Número de Telefone" name="telefone" /> 
-                    <input className="dados" type="text" placeholder="Email" name="email" /> 
-                    <input className="dados" type="text" placeholder="Endereço" name="endereco" /> 
+                    <input className="dados" type="text" placeholder="Nome" value={dadoUsuario?.nome} name="nome" /> 
+                    <input className="dados" type="text" placeholder="CPF" value={dadoUsuario?.cpf} name="cpf" /> 
+                    <input className="dados" type="text" placeholder="Número de Telefone" value={dadoUsuario?.telefone} name="telefone" /> 
+                    <input className="dados" type="text" placeholder="Endereço" value={dadoUsuario?.endereco} name="endereco" /> 
                 </div> 
             </div> 
             <div className='meusPets'> 
