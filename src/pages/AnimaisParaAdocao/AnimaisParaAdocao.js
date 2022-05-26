@@ -104,6 +104,7 @@ const vetorPets2 = [
 function AnimaisParaAdocao() {
     const history = useHistory();
     const [open, setOpen] = useState(false);
+    const [pet,setPet] = useState({});
 
     return (
         <div>
