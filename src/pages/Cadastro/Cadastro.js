@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import "./cadastro.css"
+import "./cadastro.css";
+import api from "../../services/api";
+import {cadastro} from "../../services/auth";
+
 
 function Cadastro() {
     const history = useHistory();
@@ -14,6 +17,21 @@ function Cadastro() {
         newCadUser[key] = event.target.value;
         setCadUser(newCadUser);
         console.log(newCadUser);
+    }
+
+    async function cadastrar(e) {
+        e.preventDefault();
+        try {
+          console.log(cadUser);
+          const response = await api.post("/cadastro", {cadUser});
+          alert("Cadastrado");
+          cadastro(response.data.accessToken);
+          history.push("/home");
+        } catch (error) {
+          console.log("deu erro");
+          console.warn(error);
+          alert(error.message);
+        }
     }
 
     return (
@@ -41,7 +59,7 @@ function Cadastro() {
                         onChange={UpdateUser} />
                 </div>
                 <div className="buttonContent"><button className="cadbutton"
-                    onClick={() => { alert("Cadastro realizado com sucesso!") }}>CADASTRAR</button>
+                    onClick={(cadastrar)}>CADASTRAR</button>
                 </div>
 
             </div>

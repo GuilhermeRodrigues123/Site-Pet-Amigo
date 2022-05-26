@@ -51,11 +51,10 @@
 
 .homeMom {
     display: flex;
+    flex-direction: column;
     align-items: center;
     column-gap: 50px;
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .textHome {
@@ -68,17 +67,23 @@
 }
 
 .textHome2 {
-
     align-self: center;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    margin-top: 6%;
+    margin-top: 10vh;
     color: #000000;
+    column-gap: 50px;
 }
 
-.img2 {
+.img1{
+    max-width:80%;
     object-fit: contain;
-    margin-left: 20%;
+    align-self: center;
+}
+.img2 {
+    max-width:80%;
+    object-fit: contain;
+    align-self: center;
 }
 
 .homeButton {
@@ -92,36 +97,50 @@
     border-radius: 8px;
     color: #0D3B66;
     margin-top: 12px;
-    margin-left: 100px;
     border: 0px;
 }
 
 .cardMom {
     justify-content: center;
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    column-gap: 5%;
 }
 
 .cardHome {
-
+    margin-top: 5%;
     padding: 30px;
-    width: 40vh;
-    height: 50vh;
+    width: 20rem;
+    height: 20rem;
+    max-width: 80%;
     background-color: #FFC759;
     border-radius: 18px;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
     border: 3px solid #6E2594;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 3%;
 
 }
-
+@media (min-width: 800px) {
+    .cardMom{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .cardHome{
+        font-size: 15px;
+        margin-top: 5%;
+    }
+}
+@media (min-width: 1000px) {
+    .homeMom{
+        flex-direction: row;
+    }
+}
 @media (max-width: 500px) {
+    .paginaCarrossel{
+        display: none;
+    }
     .cardMom {
         flex-direction: column;
+        max-width:90%;
+        font-size: 12px;
     }
 
     .homeMom {
@@ -129,8 +148,8 @@
     }
 
     .cardHome {
-        min-width: 40vh;
-        min-height: 50vh;
-        margin-top: 3%;
+        max-width:100%;
+        font-size: 15px;
+        margin-top: 5%;
     }
 }

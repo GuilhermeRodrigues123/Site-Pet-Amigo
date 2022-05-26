@@ -12,26 +12,26 @@
 }
 
 .meuPerfil{
-    padding-top: 5%;
+    padding-top: 3%;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 400px;
-    max-height: 80vh;
+    max-height: 70vh;
     height: 600px;
     background-color: #FFC759;
     border-radius: 18px;
     border: 4px solid #6E2594;
 }
 .meusPets{
-    padding-top: 5%;
+    padding-top: 3%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     width: 400px;
-    height: 70vh;
-    min-height: 600px;
+    max-height: 70vh;
+    height: 600px;
     background-color: #6E2594;
     border-radius: 18px;
     border: 4px solid #000000;
@@ -40,7 +40,6 @@
 
 .dadosPerfil{
     width: 80%;
-    border: 4px double green;
 }
 
 .dados{
@@ -50,10 +49,14 @@
     margin-top: 10px;
 }
 
-.imagem{
-    width: 30%;
+.meuPerfil .imagem{
+    width: 20%;
     object-fit: contain;
-    border: 4px double green;
+}
+
+.meusPets .imagem{
+    width: 22%;
+    object-fit: contain;
 }
 
 .perfilText{
@@ -62,7 +65,6 @@
     justify-content: center;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 30px;
-    border: 4px double green;
 }
 
 .meuPerfil h1{
@@ -82,7 +84,6 @@
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
     margin-top: 5%;
-    border: 4px double green;
 }
 
 .dadosPerfil input{

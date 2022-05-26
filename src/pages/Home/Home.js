@@ -9,11 +9,9 @@ function Home() {
     const history = useHistory();
     return (
         <div className='mom'>
-            <h1>Home</h1>
-            
             <Carousel className="paginaCarrossel" variant="dark">
                 <Carousel.Item>
-                    <img onClick={() => { history.push("/animais-para-adocao"); }}
+                    <img onClick={() => { history("/cadastro"); }}
                         className="carrosselImg"
                         src="/images/banner1.png" />
                 </Carousel.Item>
@@ -21,11 +19,11 @@ function Home() {
                 <Carousel.Item>
                     <img
                         className="carrosselImg"
-                        src="/images/Carrossel2img.png" />
+                        src="/images/Carrossel2.png" />
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <img onClick={() => { history.push("/contato"); }}
+                    <img
                         className="carrosselImg"
                         src="/images/carrossel3.png" />
                     <Carousel.Caption>
@@ -35,14 +33,14 @@ function Home() {
             
             <div className="homeMom">
                 <div className="textHome">
-                    <img src="/images/petHomeimg.png"></img>
+                    <img className="img1" src="/images/petHomeimg.png"></img>
                     <div className="titHome">Por que devo adotar um pet?</div>
                     <p>Você terá um novo companheiro e amigo que fará <br /> parte da sua vida;</p>
                     <p>Você irá ajudar a causa animal, dando um lar a <br /> animais abandonados ou que moram na rua</p>
                     <p>Vai trazer felicidade para sua casa, pois um pet <br /> pode proporcionar vários momentos de alegria.</p>
                     <p>Escolhendo adotar ao invés de comprar, você<br /> não contribui com a exploração animal.</p>
                     <p>E muitos outros motivos!<br />Não perca tempo, adote um amigo agora mesmo!</p>
-                    <button className="homeButton" onClick={() => { history.push("/animais-para-adocao") }}>Adote aqui</button>
+                    <button className="homeButton">Adote aqui</button>
                 </div>
                 <div className="textHome2">
                     <img className="img2" src="/images/img2Home.png"></img>

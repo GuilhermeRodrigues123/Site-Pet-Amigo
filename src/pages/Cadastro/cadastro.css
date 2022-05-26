@@ -55,7 +55,7 @@
 
 
 .cadbutton{
-    width: 100px;
+    width: 130px;
     height: 30px;
     align-self: flex-end; /*Joga apenas essa div pro centro*/
     margin-top: 12px;
@@ -74,9 +74,6 @@
 
     .texto{
         font-size: 10px;
-    }
-    .cadbutton{
-        width: 130px;
     }
 }
 
