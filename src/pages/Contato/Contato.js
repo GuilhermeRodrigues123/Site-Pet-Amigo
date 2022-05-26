@@ -25,7 +25,7 @@ function Login() {
 
   return (
     <div className="mom">
-      <div className="contato_cadastro">
+      <div className="cadastro">
         <img className="imagem" src="/images/img1.png"></img>
         <div className="textoCad">
           <h1>Entre em contato com a gente!</h1>
@@ -35,7 +35,7 @@ function Login() {
           <p2>Estamos eperando anciosamente para ouvir a sua opinião!</p2>
         </div>
       </div>
-      <div className="contato_login">
+      <div className="login">
         <h1>Digite sua mensagem aqui!</h1>
         <Form>
           <FloatingLabel controlId="floatingTextarea2" label="E-mail">
