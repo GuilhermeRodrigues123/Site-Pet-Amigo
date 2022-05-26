@@ -8,7 +8,7 @@ import "./home.css"
 function Home() {
     const history = useHistory();
     return (
-        <div className='mom'>
+        <div className='mom_home'>
             <Carousel className="paginaCarrossel" variant="dark">
                 <Carousel.Item>
                     <img onClick={() => { history.push("/animais-para-adocao"); }}

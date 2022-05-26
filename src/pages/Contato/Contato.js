@@ -24,7 +24,7 @@ function Login() {
   }*/
 
   return (
-    <div className="mom">
+    <div className="mom_contato">
       <div className="contato_cadastro">
         <img className="imagem" src="/images/img1.png"></img>
         <div className="textoCad">

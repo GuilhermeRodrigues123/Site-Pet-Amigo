@@ -12,7 +12,7 @@ function HeaderFooter(props) {
         <>
             <body>
                 <header>
-                    <Menu />
+                    <Menu className="teste"/>
                     <Link className="links" to="home">
                         <img className="logo" src="./images/logo.png" alt="Logo"></img>
                     </Link>

@@ -21,6 +21,10 @@ header {
     box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 10px 6px rgba(0,0,0,0.14);
 }
 
+.teste{
+    display: none;
+}
+
 .header_titles {
     display: flex;
     align-items: center;
@@ -152,10 +156,14 @@ footer {
         display: none;
     }
 
-    header {
-        align-items: center;
-        display: flex;
-        justify-content: center;
+    header .logo {
+        margin-right: auto;
+        margin-right:3em;
+    }
+
+    header{
+        padding: 5vh 0;
+        justify-content:first baseline;
     }
 
     .perfil {

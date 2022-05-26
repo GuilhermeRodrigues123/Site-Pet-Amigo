@@ -6,7 +6,7 @@ function PreLoad() {
     const history = useHistory();
     return (
         <body>
-        <div className="mom">
+        <div className="mom_preload">
             <h1>PreLoad</h1>
             <div>
                 <button onClick={() => { history.push("/home"); }}>

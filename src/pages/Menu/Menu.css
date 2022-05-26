@@ -1,4 +1,4 @@
-.list{
+.list {
     width: 260px;
 }
 
@@ -12,4 +12,11 @@
     background-color: #FFB100;
     display: flex;
     align-items: center;
+    left: 0;
+}
+
+@media (min-width: 700px) {
+    .Container {
+        display: none;
+    }
 }
