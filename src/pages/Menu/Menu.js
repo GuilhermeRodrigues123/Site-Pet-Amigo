@@ -9,7 +9,7 @@ import {FiMenu} from "react-icons/fi"
 function Menu(props) {
 const history= useHistory();
 const [currentPage, setCurrentPage] = useState("/home")
-const [open, setOpen] = useState("false")
+const [open, setOpen] = useState(false)
 function handleClick(pathName){
 history.push(pathName);
 setCurrentPage(pathName)}
@@ -17,53 +17,56 @@ function handleDrawer(isOpen) {
 setOpen(isOpen);
 }
 
-    return
+const pages=[{
+    pathName: "/home",
+    icon: <MdHome />,
+    text: "Home",
+},
+{ 
+    pathName: "/animais-para-adocao",
+    icon: <MdPets />,
+    text: "Quero adotar",
+},
+{
+    pathName: "/login",
+    icon: <MdKeyboardTab />,
+    text: "Login/Cadastro",
+},
+{
+    pathName: "/meu-perfil",
+    icon: <MdPerson />,
+    text: "Meu perfil",
+},
+];
+
+    return (
         <>
         <AppBar position="static">
             {props.children}
         </AppBar>
-        <Toolbar style={{ backgroundColor: "white" }}>
+        <Toolbar style={{ backgroundColor: "inherit" }}>
          <IconButton edge="start" aria-label="menu" onClick ={()=> {handleDrawer(!open)}}>
              <FiMenu />
          </IconButton>
         </Toolbar>
     <Drawer open={open} onClose={()=> handleDrawer (false)}>
 <List className="list">
-<ListItem button selected={currentPage === "/home"} onClick={()=> {handleClick("/home")}}>
+    {pages.map(( listItem ) => {
+return( <ListItem button selected={currentPage === listItem.pathName} onClick={()=> {handleClick(listItem.pathName)}}>
     <IconContext.Provider value={{ color: "#FFB100", size: "1.5em"}}>
-    <MdHome />
+    {ListItem.icon}
     </IconContext.Provider>
     <ListItemText className="listItemText">
-        <Typography>Home</Typography>
+        <Typography>{listItem.text}</Typography>
     </ListItemText>
 </ListItem>
-<ListItem button selected={currentPage === "/animais-para-adocao"} onClick={()=> {handleClick("/animais-para-adocao")}}>
-    <IconContext.Provider value={{ color: "#FFB100", size: "1.5em"}}>
-    <MdPets />
-    </IconContext.Provider>
-    <ListItemText className="listItemText">
-        <Typography>Quero adotar</Typography>
-    </ListItemText>
-</ListItem>
-<ListItem button selected={currentPage === "/login"} onClick={()=> {handleClick("/login")}}>
-    <IconContext.Provider value={{ color: "#FFB100", size: "1.5em"}}>
-    <MdKeyboardTab />
-    </IconContext.Provider>
-    <ListItemText className="listItemText">
-        <Typography>Login/Cadastro</Typography>
-    </ListItemText>
-</ListItem>
-<ListItem button selected={currentPage === "/meu-perfil"} onClick={()=> {handleClick("/meu-perfil")}}>
-    <IconContext.Provider value={{ color: "#FFB100", size: "1.5em"}}>
-    <MdPerson />
-    </IconContext.Provider>
-    <ListItemText className="listItemText">
-        <Typography>Meu perfil</Typography>
-    </ListItemText>
-</ListItem>
+);
+    })}
+
 </List>
 </Drawer>;
 </>
+);
 }
 
 export default Menu;
