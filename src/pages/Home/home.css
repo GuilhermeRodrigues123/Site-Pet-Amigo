@@ -1,14 +1,20 @@
-.mom{
+.mom {
+    display: wrap;
     padding: 30vh 10vw;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
-.buttonContent{
+.buttonContent {
+    min-width: 20rem;
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.carrosselButton1{
+.carrosselButton1 {
 
     width: 100px;
     height: 30px;
@@ -17,88 +23,133 @@
     font-size: 10px;
     border-radius: 8px;
     color: #ffffff;
-    align-self: flex-end; /*Joga apenas essa div pro centro*/
+    align-self: flex-end;
+    /*Joga apenas essa div pro centro*/
     margin-top: 12px;
     border: 0px;
 
 }
 
-.paginaCarrossel{
+.paginaCarrossel {
     width: 80vw;
     height: 50vh;
 }
 
-.carrosselImg{
-    object-fit:contain;
+.carrosselImg {
+    object-fit: contain;
     height: 52vh;
     width: 80vw;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-.textHome{
-
-    font-family: 'Poppins';
-    font-size: 15px;
-    margin-top: 10vh;
-    color: #000000;
-}
-
-.titHome{
+.titHome {
     color: #0D3B66;
     font-family: Bebas Neue, semi-bold;
     font-size: 45px;
     margin-bottom: 10px;
 }
-.homeMom{
 
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    
+.homeMom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 50px;
+    justify-content: center;
 }
 
-.textHome2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    margin-top: 6%;
+.textHome {
+    align-self: center;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    margin-top: 10vh;
     color: #000000;
+    column-gap: 50px;
 }
 
-.img2{
-    margin-left: 20%;
+.textHome2 {
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-top: 10vh;
+    color: #000000;
+    column-gap: 50px;
 }
 
-.homeButton{
+.img1{
+    max-width:80%;
+    object-fit: contain;
+    align-self: center;
+}
+.img2 {
+    max-width:80%;
+    object-fit: contain;
+    align-self: center;
+}
+
+.homeButton {
 
     justify-content: center;
-    width: 8vw;
-    height: 6vh;
+    width: 8rem;
+    height: 4rem;
     background-color: #FFB100;
     font-family: 'Poppins', Bold;
     font-size: 17px;
     border-radius: 8px;
     color: #0D3B66;
     margin-top: 12px;
-    margin-left: 100px;
     border: 0px;
 }
 
-.cardMom{
-    display: flex;
+.cardMom {
     justify-content: center;
-    margin-top: 10%;
+    column-gap: 5%;
 }
 
-.cardHome{
-
+.cardHome {
+    margin-top: 5%;
     padding: 30px;
-    width: 30vh;
-    height: 30vh;
+    width: 20rem;
+    height: 20rem;
+    max-width: 80%;
     background-color: #FFC759;
     border-radius: 18px;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
     border: 3px solid #6E2594;
-    margin-left: 3%;
 
+}
+@media (min-width: 800px) {
+    .cardMom{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .cardHome{
+        font-size: 15px;
+        margin-top: 5%;
+    }
+}
+@media (min-width: 1000px) {
+    .homeMom{
+        flex-direction: row;
+    }
+}
+@media (max-width: 500px) {
+    .paginaCarrossel{
+        display: none;
+    }
+    .cardMom {
+        flex-direction: column;
+        max-width:90%;
+        font-size: 12px;
+    }
+
+    .homeMom {
+        flex-direction: column;
+    }
+
+    .cardHome {
+        max-width:100%;
+        font-size: 15px;
+        margin-top: 5%;
+    }
 }

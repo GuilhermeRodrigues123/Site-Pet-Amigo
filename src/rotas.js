@@ -31,7 +31,7 @@ function Rotas() {
         <Route path='/animais-para-adocao' component={AnimaisParaAdocao} />
         <Route path='/meu-perfil' component={MeuPerfil} />
         <Route path='/home' component={Home} />
-        <PrivateRoute path='/login' component={Login} />
+        <Route path='/login' component={Login} />
         <Route path='/cadastro' component={Cadastro} />
         <Route path='/contato' component={Contato} />
       </HeaderFooter>
