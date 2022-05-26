@@ -2,7 +2,7 @@
     size: 50%;
 }
 
-.login{
+.contato_login{
     display: flex;
     justify-content: center;
     align-items: center; /*Vertical */
@@ -27,7 +27,7 @@
     padding: 1rem;
 }
 
-.cadastro{
+.contato_cadastro{
     display: flex;
     justify-content: center;
     align-items: center; /*Vertical */
