@@ -8,6 +8,7 @@
     align-items: center; /*Vertical */
     flex-direction: column;    
     width: 450px;
+    max-width: 80%;
     height: 50vh;
     min-height: 450px;
     background-color: #FFB100;
@@ -23,6 +24,7 @@
     align-items: center; /*Vertical */
     flex-direction: column;    
     width: 450px;
+    max-width: 80%;
     height: 50vh;
     min-height: 450px;
     background-color: #D5B3FF;
@@ -92,13 +94,18 @@
 }
 
 @media (max-width: 600px) {
+    .cadastro{
+        display: flex;
+        justify-content: center;
+
+    }
     .cadastro h1{
-        font-size: 22px;
+        font-size: 1.2rem;
     }
     .cadastro p1{
-        font-size: 14px ;
+        font-size: 0.5rem ;
     }
     .cadastro p2{
-        font-size: 10px;
+        font-size: 0.4rem;
     }
 }
