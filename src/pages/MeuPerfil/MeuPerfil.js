@@ -7,6 +7,7 @@ import api from "../../services/api";
 function MeuPerfil() { 
     const history = useHistory(); 
     const [dadoUsuario,setDadoUsuario] = useState();
+    const [newDadoUsuario,setNewDadoUsuario] = useState();
 
   async function getDadosusuario() {
       try {
@@ -23,6 +24,19 @@ function MeuPerfil() {
 
   }
 
+   const handleChange = (event) => { 
+    const {name, value} = event.target;
+       return setNewDadoUsuario({ ...newDadoUsuario, [name]: value});
+   }
+
+   async function updateUsuario(){
+       console.log(newDadoUsuario);
+        const usuario_id = getUsuario_id();
+        const response = await api.put(`/usuarios/${usuario_id}`, newDadoUsuario );
+        console.log(response);
+   }
+
+
     useEffect(()=> {
         getDadosusuario();
     },[]);
@@ -38,11 +52,12 @@ function MeuPerfil() {
                     Meus dados de cadastro 
                 </div> 
                 <div className='dadosPerfil'> 
-                    <input className="dados" type="text" placeholder="Nome" value={dadoUsuario?.nome} name="nome" /> 
-                    <input className="dados" type="text" placeholder="CPF" value={dadoUsuario?.cpf} name="cpf" /> 
-                    <input className="dados" type="text" placeholder="Número de Telefone" value={dadoUsuario?.telefone} name="telefone" /> 
-                    <input className="dados" type="text" placeholder="Endereço" value={dadoUsuario?.endereco} name="endereco" /> 
-                </div> 
+                    <input className="dados" type="text" placeholder="Nome" defaultValue={dadoUsuario?.nome} onChange={handleChange} name="nome" /> 
+                    <input className="dados" type="text" placeholder="CPF" defaultValue={dadoUsuario?.cpf} onChange={handleChange} name="cpf" /> 
+                    <input className="dados" type="text" placeholder="Número de Telefone" defaultValue={dadoUsuario?.telefone} onChange={handleChange} name="telefone" /> 
+                    <input className="dados" type="text" placeholder="Endereço" defaultValue={dadoUsuario?.endereco} onChange={handleChange} name="endereco" /> 
+                </div>
+                <button className="cadbutton" onClick= {(updateUsuario)} >Alterar Dados</button>
             </div> 
             <div className='meusPets'> 
                 <img className="imagem" src="/images/petDesign.png"></img> 
