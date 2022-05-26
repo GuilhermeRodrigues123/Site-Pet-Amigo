@@ -7,3 +7,9 @@
     margin-Left: 16px;
 }
 
+.Container {
+    width: 10%;
+    background-color: #FFB100;
+    display: flex;
+    align-items: center;
+}
