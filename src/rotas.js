@@ -11,6 +11,20 @@ import { isAuthenticated } from "./services/auth";
 import Contato from './pages/Contato';
 import Menu from './pages/Menu';
 
+const PrivateRoute = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={props =>
+      isAuthenticated() ? (
+        <Component {...props} />
+      ) : (
+        <Redirect to={{ pathname: "/login", state: { from: props.location } }} />
+      )
+    }
+  />
+);
+
+
 function Rotas() {
   return (
     <BrowserRouter>
@@ -18,30 +32,17 @@ function Rotas() {
         {/* <Route component={() => <Redirect to="/preload" />} /> */}
         <Route exact path='/preload' component={PreLoad} />
         <Route exact path='/animais-para-adocao' component={AnimaisParaAdocao} />
-        <Route exact path='/meu-perfil' component={MeuPerfil} />
+        <PrivateRoute exact path='/meu-perfil' component={MeuPerfil} />
         <Route path='/home' component={Home} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/cadastro' component={Cadastro} />
-        <Route exact path='/contato' component={Contato} />
-        <Route exact path='/temp' component={Menu} />
       </HeaderFooter>
     </BrowserRouter>
   );
-
-
-  const PrivateRoute = ({ component: Component, ...rest }) => (
-    <Route
-      {...rest}
-      render={props =>
-        isAuthenticated() ? (
-          <Component {...props} />
-        ) : (
-          <Redirect to={{ pathname: "/cadastro", state: { from: props.location } }} />
-        )
-      }
-    />
-  );
 }
+
+
+
 
 
 export default Rotas;
