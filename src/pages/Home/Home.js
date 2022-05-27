@@ -30,7 +30,7 @@ function Home() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            
+
             <div className="homeMom">
                 <div className="textHome">
                     <img className="img1" src="/images/petHomeimg.png"></img>
@@ -47,7 +47,7 @@ function Home() {
                     <h1 className="titHome">Um pouco sobre a Pet Amigo</h1>
                     <p>A Pet Amigo é um projeto idealizado a partir de um sonho, no qual todos os animais têm o direito de viver uma vida digna e lotada de amor. </p>
                     <p>Somos uma instituição sem fins lucrativos, responsáveis por tirar os pets da situação de abandono e maus tratos e
-                    criar a ponte entre eles e suas futuras famílias e desde 2010, já resgatamos mais de 1500 animais para serem adotados.</p>
+                        criar a ponte entre eles e suas futuras famílias e desde 2010, já resgatamos mais de 1500 animais para serem adotados.</p>
                 </div>
             </div>
             <div className="cardMom">

@@ -74,7 +74,8 @@
     column-gap: 50px;
     border: 3px solid #6E2594;
     background-color: rgba(255, 199, 89, 1);
-    width: 500px;
+    width: 400px;
+    max-width: 80%;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0,0,0,0.24); 
     box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0,0,0,0.24);
 }
@@ -92,7 +93,8 @@
     column-gap: 50px;
     border: 3px solid #6E2594;
     background-color: rgba(255, 199, 89, 1);
-    width: 500px;
+    width: 400px;
+    max-width: 80%;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0,0,0,0.24); 
     box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0,0,0,0.24);
 }
@@ -134,6 +136,7 @@
     grid-template-columns: auto auto;
     gap: 0.5rem;
     justify-content: center;
+    
 }
 
 .cardHome {
