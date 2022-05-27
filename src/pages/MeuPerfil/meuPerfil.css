@@ -11,6 +11,11 @@
 
 }
 
+.cadbutton{
+    margin-right: 10%;
+    max-width: 80%;
+}
+
 .minicard{
     display: flex;
     justify-content: space-around;
