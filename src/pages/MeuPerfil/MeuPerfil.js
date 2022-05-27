@@ -8,24 +8,20 @@ function MeuPerfil() {
     const history = useHistory();
     const [dadoUsuario, setDadoUsuario] = useState();
     const [newDadoUsuario, setNewDadoUsuario] = useState();
+    const [dadoFavoritar, setDadoFavoritar] = useState();
 
-    async function getFavoritos(){
+    async function getFavoritos() {
         try {
             const usuario_id = getUsuario_id();
-            console.log(usuario_id);
-            const response = await api.get(`/favoritos/${usuario_id}`).then((res) => {
-                //api.get("/pets", res.data.pet_id);
-                console.log(res.data);
-            })
-            //setDadoUsuario(response.data);
-            //console.log(response);
+            const response = await api.get(`/favoritos/${usuario_id}`)
+            setDadoFavoritar(response.data);
         } catch (error) {
             console.log("deu erro");
             console.warn(error);
             alert(error.message);
         }
     }
-    
+
     async function getDadosUsuario() {
         try {
             const usuario_id = getUsuario_id();
@@ -55,7 +51,7 @@ function MeuPerfil() {
             console.warn(error);
             alert(error.message);
         }
-   }
+    }
 
 
 
@@ -88,6 +84,15 @@ function MeuPerfil() {
                 <h1 className="perfilText">
                     Meus Pets
                 </h1>
+                <div className='minicard'>
+                    <h1 className='nome_pet'>dogao  </h1>
+                    <div>
+                        <h1>cachorro  </h1>
+                        <h1>10 anos  </h1>
+                        <h1>medio  </h1>
+                    </div>
+                </div>
+
             </div>
         </div>
 
