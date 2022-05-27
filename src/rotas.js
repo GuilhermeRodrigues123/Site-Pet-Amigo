@@ -27,6 +27,7 @@ function Rotas(){
             </HeaderFooter>
         </BrowserRouter>
     );
+};
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -41,21 +42,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
   />
 );
 
-function Rotas() {
-  return (
-    <BrowserRouter>
-      <HeaderFooter>
-        <Route component={() => <Redirect to="/home" />}/> 
-        <Route path='/animais-para-adocao' component={AnimaisParaAdocao} />
-        <PrivateRoute path='/meu-perfil' component={MeuPerfil} />
-        <Route path='/home' component={Home} />
-        <Route path='/login' component={Login} />
-        <Route path='/cadastro' component={Cadastro} />
-        <Route path='/contato' component={Contato} />
-      </HeaderFooter>
-    </BrowserRouter>
-  );
-}
+
 
 function UserMenu(){
     return(
