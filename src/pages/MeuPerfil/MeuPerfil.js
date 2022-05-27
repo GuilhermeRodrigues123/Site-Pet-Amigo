@@ -81,7 +81,7 @@ function MeuPerfil() {
                 <button className="cadbutton" onClick={(updateUsuario)} >Alterar Dados</button>
             </div>
 
-            <div className='meusPets' >
+            <div className='meusPets'>
                 <img className="imagem" src="/images/petDesign.png"></img>
                 <h1 className="perfilText">
                     Meus Pets
