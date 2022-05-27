@@ -6,6 +6,10 @@
     display: flex;
 }
 
+.Card.Body{
+    justify-content: center;
+}
+
 .cardStyle{
     font-family: 'Poppins', semi-bold;
     font-size: 15px;

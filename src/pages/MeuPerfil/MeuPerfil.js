@@ -8,7 +8,7 @@ function MeuPerfil() {
     const history = useHistory();
     const [dadoUsuario, setDadoUsuario] = useState();
     const [newDadoUsuario, setNewDadoUsuario] = useState();
-    const [dadoFavoritar, setDadoFavoritar] = useState();
+    const [dadoFavoritar, setDadoFavoritar] = useState([]);
 
     async function getFavoritos() {
         try {
@@ -79,21 +79,26 @@ function MeuPerfil() {
                 </div>
                 <button className="cadbutton" onClick={(updateUsuario)} >Alterar Dados</button>
             </div>
-            <div className='meusPets'>
+
+            <div className='meusPets' >
                 <img className="imagem" src="/images/petDesign.png"></img>
                 <h1 className="perfilText">
                     Meus Pets
                 </h1>
-                <div className='minicard'>
-                    <h1 className='nome_pet'>dogao  </h1>
-                    <div>
-                        <h1>cachorro  </h1>
-                        <h1>10 anos  </h1>
-                        <h1>medio  </h1>
+                {dadoFavoritar.map((value) => (
+                    <div className='minicard' key={value.usuario_id}>
+                        <h1 className='nome_pet'>{value.nome} </h1>
+                        <div>
+                            <h1>especie: {value.especie} </h1>
+                            <h1>idade: {value.idade} </h1>
+                            <h1>porte: {value.porte} </h1>
+                        </div>
                     </div>
-                </div>
+                ))}
 
             </div>
+
+
         </div>
 
     );
