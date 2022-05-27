@@ -45,6 +45,7 @@ function MeuPerfil() {
             const usuario_id = getUsuario_id();
             const response = await api.put(`/usuarios/${usuario_id}`, newDadoUsuario);
             console.log(response);
+            alert("Dados alterados com sucesso!");
         }
         catch (error) {
             console.log("deu erro");
