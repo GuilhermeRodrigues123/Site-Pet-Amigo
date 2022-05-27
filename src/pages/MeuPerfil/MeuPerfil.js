@@ -9,13 +9,28 @@ function MeuPerfil() {
     const [dadoUsuario, setDadoUsuario] = useState();
     const [newDadoUsuario, setNewDadoUsuario] = useState();
 
-    async function getDadosUsuario() {
+    async function getFavoritos(){
         try {
             const usuario_id = getUsuario_id();
             console.log(usuario_id);
+            const response = await api.get(`/favoritos/${usuario_id}`).then((res) => {
+                //api.get("/pets", res.data.pet_id);
+                console.log(res.data);
+            })
+            //setDadoUsuario(response.data);
+            //console.log(response);
+        } catch (error) {
+            console.log("deu erro");
+            console.warn(error);
+            alert(error.message);
+        }
+    }
+    
+    async function getDadosUsuario() {
+        try {
+            const usuario_id = getUsuario_id();
             const response = await api.get(`/usuarios/${usuario_id}`);
             setDadoUsuario(response.data);
-            console.log(response);
         } catch (error) {
             console.log("deu erro");
             console.warn(error);
@@ -23,19 +38,6 @@ function MeuPerfil() {
         }
     }
 
-    async function getFavoritos(){
-        try {
-            const usuario_id = getUsuario_id();
-            console.log(usuario_id);
-            const response = await api.get(`/favoritos/${usuario_id}` );
-            setDadoUsuario(response.data);
-            console.log(response);
-        } catch (error) {
-            console.log("deu erro");
-            console.warn(error);
-            alert(error.message);
-        }
-    }
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -60,6 +62,7 @@ function MeuPerfil() {
 
     useEffect(() => {
         getDadosUsuario();
+        getFavoritos();
     }, []);
 
     return (
