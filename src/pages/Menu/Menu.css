@@ -1,0 +1,22 @@
+.list {
+    width: 260px;
+}
+
+.listItemText {
+    color: #FFB100;
+    margin-Left: 16px;
+}
+
+.Container {
+    width: 10%;
+    background-color: #FFB100;
+    display: flex;
+    align-items: center;
+    left: 0;
+}
+
+@media (min-width: 700px) {
+    .Container {
+        display: none;
+    }
+}

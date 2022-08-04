@@ -1,0 +1,95 @@
+.mb3{
+    size: 50%;
+}
+
+.contato_login{
+    display: flex;
+    justify-content: center;
+    align-items: center; /*Vertical */
+    flex-direction: column;    
+    width: 40vw;
+    height: 50vh;
+    background-color: #FFB100;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 1rem;
+}
+.redes-sociais{
+    justify-content: center;
+    align-items: vertical; /*Vertical */ 
+    width: 40vw;
+    height: 50vh;
+    background-color: #FFd100;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 1rem;
+}
+
+.contato_cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center; /*Vertical */
+    flex-direction: column;    
+    width: 25vw;
+    height: 50vh;
+    background-color: #D5B3FF;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 1rem;
+}
+
+.imagem{
+    margin-bottom: 10% auto;
+    width: 15%;
+    height: 15%;
+}
+
+.textoCad{
+    margin-top: 5%;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.mom_contato{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 30vh 10vw;
+    justify-content: space-around;
+}
+
+.buttonContent{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -2%;
+}
+
+.cadastroButton{
+    width: 33%;
+    height: 40px;
+    background-color: #6E2594;
+    font-family: 'Poppins', semiBold;
+    font-size: 10px;
+    border-radius: 5px;
+    color: #FFB100;
+    border: 0px;
+}
+
+.loginButton{
+    width: 30%;
+    height: 40px;
+    background-color: #F18F01;
+    font-family: 'Poppins', semiBold;
+    font-size: 10px;
+    border-radius: 5px;
+    color: #6E2594;
+    stroke: #6E2594;
+    stroke-width: 30px;
+    align-self: flex-end; /*Joga apenas essa div pro centro*/
+    border: 0px;
+}

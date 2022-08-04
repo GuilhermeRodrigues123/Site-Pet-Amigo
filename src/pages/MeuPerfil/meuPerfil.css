@@ -1,0 +1,191 @@
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border: 0px none #ffffff;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+
+::-webkit-scrollbar-track {
+    background: #525252;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #999999;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #454545;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+.mae {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    column-gap: 50px;
+    row-gap: 50px;
+    padding: 30vh 10vw;
+
+}
+
+.cadbutton {
+    margin-right: 10%;
+    max-width: 80%;
+}
+
+.minicard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    max-height: 20%;
+    height: 100px;
+    background-color: #000000;
+    border-radius: 18px;
+    border: 4px solid #111111;
+}
+
+.minicard .nome_pet {
+    font-size: 25px;
+}
+
+.minicard h1 {
+    font-size: 17px;
+}
+
+.meuPerfil {
+    padding-top: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    max-height: 70vh;
+    height: 600px;
+    background-color: #FFC759;
+    border-radius: 18px;
+    border: 4px solid #6E2594;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0, 0, 0, 0.24);
+}
+
+.meusPets {
+    overflow-y: auto;
+    padding-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 400px;
+    max-height: 70vh;
+    height: 600px;
+    background-color: #6E2594;
+    border-radius: 18px;
+    border: 4px solid #000000;
+    color: white;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 7px 7px 0px rgba(0, 0, 0, 0.24);
+}
+
+.dadosPerfil {
+    width: 80%;
+}
+
+.dados {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.meuPerfil .imagem {
+    width: 20%;
+    object-fit: contain;
+}
+
+.meusPets .imagem {
+    width: 22%;
+    object-fit: contain;
+}
+
+.perfilText {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+}
+
+.meuPerfil h1 {
+    text-decoration: underline #6E2594;
+    /*text-decoration-thickness: 80px;
+    border-bottom: 1px solid red;*/
+}
+
+.meusPets .perfilText {
+    text-decoration: underline #FFC759;
+
+}
+
+.perfilSubtext {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-top: 5%;
+}
+
+.dadosPerfil input {
+    width: 100%;
+}
+
+
+@media (max-width: 500px) {
+    .meusPets {
+        width: 100%;
+    }
+
+    .meuPerfil {
+        width: 100%;
+    }
+
+    .perfilText {
+        font-size: 20px;
+    }
+
+    .perfilSubtext {
+        font-size: 9px;
+    }
+
+    .dados input {
+        height: 1000px;
+    }
+}
