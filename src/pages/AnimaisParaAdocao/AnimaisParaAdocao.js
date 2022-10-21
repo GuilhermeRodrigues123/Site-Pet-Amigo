@@ -159,7 +159,7 @@ function AnimaisParaAdocao() {
                                         key={value.pet_id}>
                                         <Card.Img variant="top" src={`./images/${value.especie}.png`} />
                                         <Card.Body>
-                                            <Card.Text> NOME: {value.nome}</Card.Text>
+                                            <Card.Text> Nome: {value.nome}</Card.Text>
                                             <Card.Text> ESPECIE: {value.especie} </Card.Text>
                                             <Card.Text> IDADE: {value.idade} anos</Card.Text>
                                             <Card.Text> PORTE: {value.porte}</Card.Text>
